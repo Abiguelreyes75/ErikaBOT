@@ -4,9 +4,9 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '*[ ⚠️ ] Los comand
 let url = pack[Math.floor(Math.random() * pack.length)]
 conn.sendButton(m.chat, `_🥵 Pack 🥵_`, author, url, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `/${command}`]], m)
 }
-handler.help = ['pack']
+handler.help = ['tetasgrandes']
 handler.tags = ['internet']
-handler.command = /^(pack)$/i
+handler.command = /^(tetasgrandes)$/i
 export default handler
 
 global.pack = [
