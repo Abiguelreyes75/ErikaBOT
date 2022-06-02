@@ -125,7 +125,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 
 ### 🌟 CREADORA 
  
-[![GataNina-Li](https://github.com/Abiguelreyes75.png?size=100)](https://github.com/Abiguelreyes75) 
+[![GataNina-Li]([https://github.com/Abiguelreyes75.png?](https://cdn.atomix.vg/wp-content/uploads/2022/05/anya_spy_xfamily_1.jpg_1339198940-1024x768.jpg)size=100)](https://github.com/Abiguelreyes75) 
  
 ### 🌟 AGRADECIMIENTOS
  
