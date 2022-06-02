@@ -122,11 +122,3 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 - SE RECOMIENDA REESCANEAR EL CODIGO QR CADA 2 DIAS, PARA EVITAR PROBLEMAS O ERRORES
 ```
 ----
-
-### 🌟 CREADORA 
- 
-[![GataNina-Li]([https://github.com/Abiguelreyes75.png?](https://cdn.atomix.vg/wp-content/uploads/2022/05/anya_spy_xfamily_1.jpg_1339198940-1024x768.jpg)size=100)](https://github.com/Abiguelreyes75) 
- 
-### 🌟 AGRADECIMIENTOS
- 
-[![TheShadowBrokers1](https://github.com/BrunoSobrino.png?size=100)](https://github.com/BrunoSobrino) 
