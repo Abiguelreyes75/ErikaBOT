@@ -10,7 +10,5 @@ handler.command = /^(vaginas)$/i
 export default handler
 
 global.pack = [
-  "https://external-preview.redd.it/-ed6SLyC0Y5S01do2JqJm2CqyavVBn7JOv6-6M85jsE.png?auto=webp&s=7da27edf3ecad9f86db4fb4c03020f63044dd755U",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQw-VhgG0yHAQrWhcxoKUplifLJRoKJ9NFtFcBUPZtTCZWMWDOfxOjEIbmKkLsxrTwHM&usqp=CAU",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6wFlconD8OP6BUU1o3nb2zR9EfSy3l2DkEg&usqp=CAU",
+ "https://www.cleverfiles.com/howto/wp-content/uploads/2018/03/minion.jpg",
   ]
