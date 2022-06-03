@@ -100,7 +100,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```bash
  
   >cd ErikaBOT
-  >rmr -rf BOT
+  >rm -rf BOT
   >git clone https://github.com/Abiguelreyes75/ErikaBOT.git
   >cd ErikaBOT
   >yarn
