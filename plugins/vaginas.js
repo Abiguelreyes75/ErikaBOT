@@ -10,7 +10,7 @@ handler.command = /^(vaginas)$/i
 export default handler
 
 global.pack = [
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQssN3kM_GE9BqOyqVh7vYxyonsyZZw9Mg7ag&usqp=CAU",
-  "https://thumb-v2.xhcdn.com/a/vamJ40FMwvU0FE4UfctZAw/018/883/602/320x240.10.jpg",
-  "https://cdn77-pic.xnxx-cdn.com/videos/thumbslll/b6/03/2c/b6032c8938086eb4b43a1aaa7f7b4f0f/b6032c8938086eb4b43a1aaa7f7b4f0f.3.jpg",
+  "https://external-preview.redd.it/-ed6SLyC0Y5S01do2JqJm2CqyavVBn7JOv6-6M85jsE.png?auto=webp&s=7da27edf3ecad9f86db4fb4c03020f63044dd755U",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQw-VhgG0yHAQrWhcxoKUplifLJRoKJ9NFtFcBUPZtTCZWMWDOfxOjEIbmKkLsxrTwHM&usqp=CAU",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6wFlconD8OP6BUU1o3nb2zR9EfSy3l2DkEg&usqp=CAU",
   ]
