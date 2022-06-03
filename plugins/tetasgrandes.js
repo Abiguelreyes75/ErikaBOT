@@ -10,5 +10,5 @@ handler.command = /^(tetasgrandes)$/i
 export default handler
 
 global.pack = [
-  "https://p-a-c-k-s.com/wp-content/uploads/2021/02/P-A-C-K-S.com_.jpeg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQssN3kM_GE9BqOyqVh7vYxyonsyZZw9Mg7ag&usqp=CAU",
 ]
