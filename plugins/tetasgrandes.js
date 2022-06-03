@@ -10,9 +10,9 @@ handler.command = /^(tetasgrandes)$/i
 export default handler
 
 global.pack = [
-  "https://i.imgur.com/XbW7FO2.jpg",
-  "https://i.imgur.com/ciuzM98.jpg",
-  "https://i.imgur.com/uHsrrrx.jpg",
+  "https://p-a-c-k-s.com/wp-content/uploads/2021/02/P-A-C-K-S.com_.jpeg",
+  "https://laverdadnoticias.com/export/sites/laverdad/img/2020/07/25/celia_lora_chichis.jpg_776227242.jpg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7eDws24RMLswlacqrnqDt0lgt8LxmKQcxaQ&usqp=CAU",
   "https://i.imgur.com/PVi8YDi.jpg",
   "https://i.imgur.com/FLC3ZXE.jpg",
   "https://i.imgur.com/54m52tX.jpg",
