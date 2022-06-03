@@ -96,7 +96,8 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 ```
 ----
   
-  ###SOLUCINAR ERROR QR DE QUE NO LO ESCANEA
+  ### SOLUCIONAR CODIGO QR QUE NO ESCANEA <img src="https://i.pinimg.com/originals/0e/c9/89/0ec989dde8b5fc0deef4e5b09292b605.gif" height="30px">
+```bash
  
   >cd ErikaBOT
   >rmr -rf BOT
@@ -104,6 +105,8 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
   >cd ErikaBOT
   >yarn
   >npm start
+  ```
+----
 
 ### OBTENER OTRO CODIGO QR <img src="http://4.bp.blogspot.com/-mFQY5cKLkQ0/U0kwKQn5RzI/AAAAAAAADk0/FDOXxWZ9grU/s1600/QR-code-color.png" height="30px">
 ```bash
