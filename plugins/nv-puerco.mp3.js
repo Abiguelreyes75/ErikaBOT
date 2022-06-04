@@ -9,7 +9,7 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /puerco|puerco/Puerco/
+handler.customPrefix = /puerco|puerco/
 handler.command = new RegExp
 export default handler
 
