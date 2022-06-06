@@ -22,8 +22,8 @@ handler.group = false
 handler.private = false
 handler.register = false
 
-handler.admin = false
-handler.botAdmin = false
+handler.admin = true
+handler.botAdmin = true
 
 handler.fail = null
 handler.exp = 200
