@@ -11,4 +11,4 @@ ptt: true
 }
 handler.customPrefix = /contexto|pasen contexto|Contexto porfa |contexti/
 handler.command = new RegExp
-export default handle
+export default handler
