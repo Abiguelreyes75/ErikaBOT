@@ -9,6 +9,6 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.customPrefix = /ingresaloco|ingresaputa|ingreso/
+handler.customPrefix = /entradaepica|entrada al chat|entrada epica al chat/
 handler.command = new RegExp
 export default handler
