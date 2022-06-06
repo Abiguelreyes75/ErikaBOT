@@ -12,7 +12,7 @@ if (typeof res == 'number') throw res == -1 ? `*[❗𝐈𝐍𝐅𝐎❗] 𝙴�
 let result = await axios.get(res, {
 responseType: 'arraybuffer'
 })
-await conn.sendFile(m.chat, result.data, 'Error.jpg', `*❤𝚃𝙾𝙼𝙰 𝚃𝚄 𝙸𝙼𝙰𝙶𝙴𝙽 𝙿𝙴𝚁𝚂𝙾𝙽𝙰𝙻𝙸𝚉𝙰𝙳𝙰❤!!*\n*𝙴𝙵𝙴𝙲𝚃𝙾: ${effect}*`, m)
+await conn.sendFile(m.chat, result.data, 'Error.jpg', `*❤𝚃𝙾𝙼𝙰 𝚃𝚄 𝙸𝙼𝙰𝙶𝙴𝙽 𝙿𝙴𝚁𝚂𝙾𝙽𝙰𝙻𝙸𝚉𝙰𝙳𝙰!!❤*\n*𝙴𝙵𝙴𝙲𝚃𝙾: ${effect}*`, m)
 }
 handler.help = ['logos']
 handler.tags = ['nulis']
