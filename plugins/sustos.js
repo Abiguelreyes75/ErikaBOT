@@ -9,7 +9,10 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.command = /^(sustos|sustos que dan gusto|soliban|sutos gustos🤖)$/i
-handler.fail = null
-handler.exp = 100
+handler.customPrefix = /sutos|soliban|Sustos|sutos/
+handler.command = new RegExp
 export default handler
+
+
+
+
