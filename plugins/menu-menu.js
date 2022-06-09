@@ -336,6 +336,7 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟🔊 _bien pensado woody_
 ° ඬ⃟🔊 _Vete a la vrg_
 ° ඬ⃟🔊 _Pasa pack Bot_
+° ඬ⃟🔊 _sustos que dan gusto_
 ° ඬ⃟🔊 _Atencion grupo_
 ° ඬ⃟🔊 _Marica quien_
 ° ඬ⃟🔊 _Murio el grupo_
