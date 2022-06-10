@@ -1,24 +1,10 @@
-let R = Math.random
-let Fl = Math.floor
-let toM = a => '@' + a.split('@')[0]
-function handler(m, { groupMetadata }) {
-    let ps = groupMetadata.participants.map(v => v.jid)
-    let a = ps[Fl(R() * ps.length)]
-    let b
-    do b = ps[Fl(R() * ps.length)]
-    while (b === a)
-    let c
-    do c = ps[Fl(R() * ps.length)]
-    while (b === a)
-    m.reply(`Hey!!! ${toM(a)}, ${toM(b)} y ${toM(c)} han pensado en hacer un trio? ustedes 3 hacen un buen trio 🥵`, null, {
-        contextInfo: {
-            mentionedJid: [a, b, c],
-        }
-    })
-}
-handler.help = ['formartrio']
-handler.tags = ['General']
-handler.command = ['formartrio','formartrios']
-handler.group = true
-
+const axios = require('axios')
+ let handler = async(m, { conn }) => {
+let les = await axios.get('https://meme-api.herokuapp.com/gimme/lesbians')
+            conn.sendFile(m.chat, `${les.data.url}`, '', `${les.data.title}          
+🐈 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨 🐈`, m) 
+  }
+handler.help = ['imagenrandom']
+handler.tags = ['images']
+handler.command = /^(imagenlesbianas|lesbianassexo|lesbisxd)$/i
 module.exports = handler
