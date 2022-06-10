@@ -38,7 +38,5 @@ global.vagina = [
   "https://cuantoporno.com/wp-content/uploads/2021/01/mujeres-cogiendo-a-cuatro.jpg",
   "https://www.tubemedia.info/fotos-caseras/2019/KMPGHX992507/4.jpg",
   "https://cuantoporno.com/wp-content/uploads/2021/04/fotos-culonas-mujeres-a-4-patas-17-scaled.jpg",
-  "http://www.chaty.es/host8/6187198_4.jpg",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcdG_qns1xNwjlhL5rGBv3puwNqbTm0b0FdX4VUOJJhDuiKLF0z-7KTUQ_YOyLyjRasb0&usqp=CAU",
-  
+  "http://www.chaty.es/host8/6187198_4.jpg", 
 ]
