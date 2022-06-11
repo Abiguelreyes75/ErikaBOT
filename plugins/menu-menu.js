@@ -332,6 +332,7 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟🔊 _donde esta tu honor basura_
 ° ඬ⃟🔊 _abduzcan_
 ° ඬ⃟🔊 _corre perra corre_
+° ඬ⃟🔊 _si dicelo al juez rosadito_
 ° ඬ⃟🔊 _Buenos tardes_
 ° ඬ⃟🔊 _pasen contexto_
 ° ඬ⃟🔊 _aver que paso_
