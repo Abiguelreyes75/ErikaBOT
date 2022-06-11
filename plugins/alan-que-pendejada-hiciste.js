@@ -9,6 +9,6 @@ let handler = async (m, { conn }) => {
         ptt: true
     })
 }
-handler.customPrefix = /alan que pendejada hiciste|Alan que pendejada hiciste|que pendejada hiciste /
+handler.customPrefix = /alan que pendejada hiciste|Alan que pendejada hiciste|que pendejada hiciste/
 handler.command = new RegExp
 export default handle
