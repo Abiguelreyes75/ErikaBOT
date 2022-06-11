@@ -329,6 +329,7 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟🔊 _Buenos dias_
 ° ඬ⃟🔊 _algo anda mal_
 ° ඬ⃟🔊 _acercate viejo_
+° ඬ⃟🔊 _donde esta tu honor basura_
 ° ඬ⃟🔊 _abduzcan_
 ° ඬ⃟🔊 _corre perra corre_
 ° ඬ⃟🔊 _Buenos tardes_
