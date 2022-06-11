@@ -325,6 +325,7 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟🔊 _Feliz cumpleaños_
 ° ඬ⃟🔊 _Noche de paz_
 ° ඬ⃟🔊 _entradaepica_
+° ඬ⃟🔊 _casi me cago del susto_
 ° ඬ⃟🔊 _Buenos dias_
 ° ඬ⃟🔊 _algo anda mal_
 ° ඬ⃟🔊 _acercate viejo_
