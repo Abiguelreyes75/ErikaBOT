@@ -341,6 +341,7 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟🔊 _esto no era parte del trato_
 ° ඬ⃟🔊 _que buen servicio_
 ° ඬ⃟🔊 _Buenos noches_
+° ඬ⃟🔊 _Esponja enloqueciste_
 ° ඬ⃟🔊 _Audio hentai_
 ° ඬ⃟🔊 _Chica lgante_
 ° ඬ⃟🔊 _Feliz navidad_
