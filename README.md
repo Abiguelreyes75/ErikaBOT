@@ -1,4 +1,4 @@
-# Esta versión de GataBot no esta terminada. <img src="https://c.tenor.com/QaPEi-tcFXQAAAAC/gato-besando-a-la-camara.gif" height="32px">
+# Esta versión de ErikaBOT no esta terminada. <img src="https://c.tenor.com/QaPEi-tcFXQAAAAC/gato-besando-a-la-camara.gif" height="32px">
 > #### 🚀 Versión actual: 1.0.25
 
 <p align="center"> 
