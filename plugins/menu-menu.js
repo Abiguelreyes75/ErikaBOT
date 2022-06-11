@@ -329,6 +329,9 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟🔊 _abduzcan_
 ° ඬ⃟🔊 _Buenos tardes_
 ° ඬ⃟🔊 _pasen contexto_
+° ඬ⃟🔊 _aver que paso_
+° ඬ⃟🔊 _esto no era parte del trato_
+° ඬ⃟🔊 _que buen servicio_
 ° ඬ⃟🔊 _Buenos noches_
 ° ඬ⃟🔊 _Audio hentai_
 ° ඬ⃟🔊 _Chica lgante_
