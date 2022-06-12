@@ -320,7 +320,8 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟🔊 _Te diagnostico con gay_
 ° ඬ⃟🔊 _A nadie le importa_
 ° ඬ⃟🔊 _Fiesta del admin_
-° ඬ⃟🔊 _Fiesta del administrador_ 
+° ඬ⃟🔊 _Fiesta del administrador_
+° ඬ⃟🔊 _Lo mismo pero mas barato_
 ° ඬ⃟🔊 _Vivan los novios_
 ° ඬ⃟🔊 _Feliz cumpleaños_
 ° ඬ⃟🔊 _Noche de paz_
