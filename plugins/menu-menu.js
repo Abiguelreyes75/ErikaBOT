@@ -328,6 +328,7 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟🔊 _Caiste_
 ° ඬ⃟🔊 _Madres que pedo_
 ° ඬ⃟🔊 _Esto se va a poner feo_
+° ඬ⃟🔊 _Quieres que me ponga rudo_
 ° ඬ⃟🔊 _entradaepica_
 ° ඬ⃟🔊 _casi me cago del susto_
 ° ඬ⃟🔊 _Buenos dias_
