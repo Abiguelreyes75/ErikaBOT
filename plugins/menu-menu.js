@@ -339,6 +339,7 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟🔊 _ahorita vemos que pedo_
 ° ඬ⃟🔊 _Buenos tardes_
 ° ඬ⃟🔊 _pasen contexto_
+° ඬ⃟🔊 _risa del arabe_
 ° ඬ⃟🔊 _aver que paso_
 ° ඬ⃟🔊 _esto no era parte del trato_
 ° ඬ⃟🔊 _que buen servicio_
