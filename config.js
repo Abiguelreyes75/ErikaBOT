@@ -87,7 +87,7 @@ global.gatabot = gt
 global.yt = 'MUY-PRONTO'
 global.youtube = yt
 
-global.ig = 'https://www.instagram.com/abiguelreyes75/'
+global.ig = 'https://www.instagram.com/abiguelreyes75'
 global.gatadiosig = ig
 
 global.md = 'https://github.com/Abiguelreyes75/ErikaBOT'
