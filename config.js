@@ -84,10 +84,10 @@ global.version = vs
 global.gt = 'ErikaBot'
 global.gatabot = gt
 
-global.yt = 'https://youtube.com/channel/UCpNU4eY7eiI0ve05CssjdbA'
+global.yt = 'MUY-PRONTO'
 global.youtube = yt
 
-global.ig = 'https://www.instagram.com/gata_dios'
+global.ig = 'https://www.instagram.com/abiguelreyes75/'
 global.gatadiosig = ig
 
 global.md = 'https://github.com/Abiguelreyes75/ErikaBOT'
