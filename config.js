@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url'
 
 //⊱ ━━━━━.⋅ Añada los numeros a ser Propietario/a | Add the numbers to be Owner ⋅.━━━━ ⊰
 global.owner = [
-  ['12364717916', 'Erika-Bot 💖🐈', true],
+  ['12364717916', 'Erika-Bot', true],
   ['12364717916'],
   ['12366070716']
 
@@ -84,7 +84,7 @@ global.version = vs
 global.gt = 'ErikaBot'
 global.gatabot = gt
 
-global.yt = 'MUY-PRONTO'
+global.yt = 'https://youtube.com/channel/UCpNU4eY7eiI0ve05Cssjdb'
 global.youtube = yt
 
 global.ig = 'https://www.instagram.com/abiguelreyes75'
@@ -133,8 +133,8 @@ global.exito = eg
 
 //⊱ ━━━━━.⋅ Información | Information ⋅.━━━━ ⊰
 
-global.wm = 'ErikaBO'
-global.igfg = 'Erika-BOT
+global.wm = 'ErikaBOT'
+global.igfg = 'Erika-BOT'
 global.wait = '*⌛ _Cargando..._ ▬▬▬▭*'
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
