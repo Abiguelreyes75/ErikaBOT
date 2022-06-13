@@ -53,9 +53,6 @@ room.text = m.text
 m.reply(`*[ ✔ ] 𝙷𝙰𝚂 𝙴𝙻𝙴𝙶𝙸𝙳𝙾 ${m.text}* ${!room.pilih2 ? `\n\n*𝙴𝚂𝙿𝙴𝚁𝙰𝙽𝙳𝙾 𝙰 𝚀𝚄𝙴 𝙴𝙻 𝙾𝙿𝙾𝙽𝙴𝙽𝚃𝙴 𝙴𝙻𝙸𝙹𝙰*` : ''}`)
 if (!room.pilih2) this.reply(room.p2, '*[❗] 𝙴𝙻 𝙾𝙿𝙾𝙽𝙴𝙽𝚃𝙴 𝙰𝙷 𝙴𝙻𝙴𝙶𝙸𝙳𝙾, 𝙴𝚂 𝚃𝚄 𝚃𝚄𝚁𝙽𝙾 𝙳𝙴 𝙴𝙻𝙴𝙶𝙸𝚁!!*', 0)
 }
-if (jwb2 && reg.test(m.text) && !room.pilih2 && !m.isGroup) {
-room.pilih2 = reg.exec(m.text.toLowerCase())[0]
-room.text2 = m.text
 m.reply(`*[ ✔ ] 𝙷𝙰𝚂 𝙴𝙻𝙴𝙶𝙸𝙳𝙾 ${m.text}* ${!room.pilih ? `\n\n*𝙴𝚂𝙿𝙴𝚁𝙰𝙽𝙳𝙾 𝙰 𝚀𝚄𝙴 𝙴𝙻 𝙾𝙿𝙾𝙽𝙴𝙽𝚃𝙴 𝙴𝙻𝙸𝙹𝙰*` : ''}`)
 if (!room.pilih) this.reply(room.p, '*[❗] 𝙴𝙻 𝙾𝙿𝙾𝙽𝙴𝙽𝚃𝙴 𝙰𝙷 𝙴𝙻𝙴𝙶𝙸𝙳𝙾, 𝙴𝚂 𝚃𝚄 𝚃𝚄𝚁𝙽𝙾 𝙳𝙴 𝙴𝙻𝙴𝙶𝙸𝚁!!*', 0)
 }
@@ -88,5 +85,3 @@ return !0
 }}
 handler.exp = 0
 export default handler
-function random(arr) {
-return arr[Math.floor(Math.random() * arr.length)]}
