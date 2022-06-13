@@ -82,9 +82,4 @@ db.data.users[win == room.p ? room.p : room.p2].exp += room.poin
 db.data.users[win == room.p ? room.p : room.p2].exp += room.poin_bot
 db.data.users[win == room.p ? room.p2 : room.p].exp += room.poin_lose
 }
-delete this.suit[room.id]
-}
-return !0
-}}
-handler.exp = 0
 export default handler
