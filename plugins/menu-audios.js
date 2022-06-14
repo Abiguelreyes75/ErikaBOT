@@ -1,10 +1,8 @@
-const { levelling } = '../lib/levelling.js'
+import { xpRange } from '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
-let handler = async (m, { conn, usedPrefix }) => {
-let pp = './Menu2.jpg'
-try {
-} catch (e) {
-} finally {
+import { promises } from 'fs'
+import { join } from 'path'
+let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
 //let about = (await conn.getStatus(who).catch(console.error) || {}).status || ''
 let name = await conn.getName(m.sender)
 let str = `
