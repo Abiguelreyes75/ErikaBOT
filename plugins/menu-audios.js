@@ -91,6 +91,7 @@ let pp = './media/menus/Menuvid3.mp4'
 ┃🔊_casi me cago del susto_
 ┃🔊_Buenos dias_
 ┃🔊_el mamut_
+┃🔊_Es lo mas estupido que eh oido_
 ┃🔊_algo anda mal_
 ┃🔊_Puta que oferton_
 ┃🔊_Ya es toda wey_
@@ -176,6 +177,7 @@ rows: [
 {title: "➥🔊 casi me cago del susto", description: null, rowId: `casi me cago del susto`},
 {title: "➥🔊 Buenos dias", description: null, rowId: `Buenos dias`},
 {title: "➥🔊 el mamut", description: null, rowId: `el mamut`},
+{title: "➥🔊 Es lo mas estupido que eh oido", description: null, rowId: `Es lo mas estupido que eh oido`},
 {title: "➥🔊 algo anda mal", description: null, rowId: `algo anda mal`},
 {title: "➥🔊 Puta que oferton", description: null, rowId: `Puta que oferton`},
 {title: "➥🔊 Ya es toda wey", description: null, rowId: `Ya es toda wey`},
