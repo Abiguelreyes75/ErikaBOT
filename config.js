@@ -84,13 +84,13 @@ global.version = vs
 global.gt = 'ErikaBot'
 global.gatabot = gt
 
-global.yt = 'https://youtube.com/channel/UCpNU4eY7eiI0ve05Cssjdb'
+global.yt = 'MUY PRONTO'
 global.youtube = yt
 
 global.ig = 'https://www.instagram.com/abiguelreyes75'
 global.gatadiosig = ig
 
-global.md = 'https://github.com/Abiguelreyes75/ErikaBOT'
+global.md = 'LOS AMO USUARIOS '
 global.gatabot = md
 
 global.nn = 'https://chat.whatsapp.com/IekXJwjl6tr6MtI8IyUW3dW'
@@ -99,7 +99,7 @@ global.nngrupo = nn
 global.nnn = 'https://chat.whatsapp.com/IekXJwjl6tr6MtI8IyUW3d'
 global.nnngrupo = nnn
 
-global.paypal = 'https://paypal.me/OficialGD'
+global.paypal = 'TE AMO '
 global.donar = paypal
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
