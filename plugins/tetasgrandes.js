@@ -7,6 +7,8 @@ conn.sendButton(m.chat, `🥵 Tetas Grandes 🥵`, author, url, [['🔄 𝚂𝙸
 handler.help = ['tetasgrandes']
 handler.tags = ['internet']
 handler.command = /^(tetasgrandes)$/i
+handler.exp = 50
+handler.level = 3
 export default handler
 
 global.tetasgrandes = [
