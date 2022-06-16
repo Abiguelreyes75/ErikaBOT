@@ -5,6 +5,8 @@ conn.sendHydrated(m.chat, null, null, res, null, null, null, null, [['🔄 𝚂�
 handler.help = ['pornovideos']
 handler.tags = ['random']
 handler.command = /^(pornovid|pornovideo|Pornovid|Pornovideo|Pornvid|Ponrvid|pornvid|ponrvid|pornov)$/i
+handler.exp = 50
+handler.level = 5
 export default handler
 
 function pickRandom(list) {
