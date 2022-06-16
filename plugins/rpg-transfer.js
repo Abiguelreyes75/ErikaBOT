@@ -9,8 +9,6 @@ async function handler(m, { conn, args, usedPrefix, command }) {
     let lol = `✳️ Uso del comamdo 
 *${usedPrefix + command}*  [tipo] [cantidad] [@user]
 📌 Ejemplo : ${usedPrefix + command} exp 65 @59172945992
-
-
 📍 Artículos transferibles
 ┌──────────────
 ▢ *limit* = diamante
@@ -26,7 +24,6 @@ async function handler(m, { conn, args, usedPrefix, command }) {
     if (user[type] * 1 < count) return m.reply(`✳️  *${type}*  insuficiente para transferir`)
     let confirm = `
 ¿Está seguro de que desea transferir *${count}* ${type} a  *@${(who || '').replace(/@s\.whatsapp\.net/g, '')}* ? 
-
 Tienes  *60* s
 `.trim()
     let c = 'FG - dylux-bot'
