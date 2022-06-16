@@ -7,6 +7,8 @@ conn.sendButton(m.chat, `🥵 ♥ vagina ♥  🥵`, author, url, [['🔄 𝐬�
 handler.help = ['vagina']
 handler.tags = ['internet']
 handler.command = /^(vagina)$/i
+handler.exp = 50
+handler.level = 5
 export default handler
 
 global.vagina = [
