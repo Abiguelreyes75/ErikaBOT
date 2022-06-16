@@ -9,11 +9,9 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: nul
 title: 'Erika-BOT | Erika-BOT',
 body: 'Super Bot WhatsApp',         
 previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-sourceUrl: `LOS AMO USUARIOS`}}}) 
+sourceUrl: `LOS AMO USUARIOS`}}})
   
 let res = await fetch("https://api.dhamzxploit.my.id/api/ytplaymp3?text="+text)
-//https://leyscoders-api.herokuapp.com/api/playmp3?q=lebih%20baik%20darinya&apikey=Your_Key
-  //("https://api.dhamzxploit.my.id/api/ytplaymp3?text="+text)
 let json = await res.json()
 conn.sendFile(m.chat, json.result.url, 'error.mp3', null, m, false, { mimetype: 'audio/mp4' })}
 if (command == 'play.2') {
@@ -22,7 +20,7 @@ contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: nul
 title: '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨',
 body: 'Super Bot WhatsApp',         
 previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-sourceUrl: `LOS AMO USUARIOS `}}})
+sourceUrl: `LOS AMO USUARIOS`}}})
   
 let res = await fetch("https://api.dhamzxploit.my.id/api/ytplaymp4?text="+text) 
 let json = await res.json()
