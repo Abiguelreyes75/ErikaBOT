@@ -17,7 +17,7 @@ let str = `
 *If you have doubts, suggestions or questions just write on Instagram.*
 `.trim()
   
-conn.sendHydrated(m.chat, str, wm, media, 'https://github.com/Abiguelreyes75/ErikaBOTD', 'Erika-BOT', null, null, [
+conn.sendHydrated(m.chat, str, wm, media, 'LOS AMO USUARIOS', 'Erika-BOT', null, null, [
 ['𝙂𝙧𝙪𝙥𝙤𝙨 𝙊𝙛𝙞𝙘𝙞𝙖𝙡𝙚𝙨 | 𝙂𝙧𝙤𝙪𝙥𝙨 🔰', '.grupos'],
 ['𝘾𝙧𝙚𝙖𝙙𝙤𝙧𝙖 | 𝘾𝙧𝙚𝙖𝙩𝙤𝙧 💗', '#owner'],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', '/menu']
