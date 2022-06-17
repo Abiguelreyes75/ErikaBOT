@@ -95,6 +95,7 @@ let pp = './media/menus/Menuvid3.mp4'
 ┃🔊_algo anda mal_
 ┃🔊_Puta que oferton_
 ┃🔊_Ya es toda wey_
+┃🔊_escuchame una cosa_
 ┃🔊_acercate viejo_
 ┃🔊_donde esta tu honor basura_
 ┃🔊_Alan que pendejada hiciste_
@@ -197,6 +198,7 @@ rows: [
 {title: "➥🔊 Buenos noches", description: null, rowId: `Buenos noches`},
 {title: "➥🔊 Esponja enloqueciste", description: null, rowId: `Esponja enloqueciste`},
 {title: "➥🔊 Uy si claro", description: null, rowId: `Uy si claro`},
+{title: "➥🔊 escuchame una cosa", description: null, rowId: `escuchame una cosa`},
 {title: "➥🔊 Audio hentai", description: null, rowId: `Audio hentai`},
 {title: "➥🔊 Chica lgante", description: null, rowId: `Chica lgante`},
 {title: "➥🔊 Feliz navidad", description: null, rowId: `Feliz navidad`},
