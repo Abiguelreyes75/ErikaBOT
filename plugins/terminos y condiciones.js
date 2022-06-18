@@ -1,21 +1,7 @@
 import fs from 'fs'
 function handler(m, { conn }) {
 let text = `
-*𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤 | 𝘾𝙤𝙣𝙩𝙖𝙘𝙩* 
-*Wa.me/16479546631 (BOT)*
-*https://www.instagram.com/abiguelreyes75*
-`.trim()   
-conn.reply(m.chat, text, m, {
-contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: 'Erika-BOT | Erika-BOT',
-body: '𝐂𝐫𝐞𝐚𝐝𝐨𝐫𝐚 | 𝐂𝐫𝐞𝐚𝐭𝐨𝐫',         
-previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
-sourceUrl: `https://wa.me/16479546631`}}})
-  
-//const data = global.owner.filter(([id, isCreator]) => id && isCreator)
-//this.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
-  
-let str = `🧡 *=> El desconocimiento de lo que aqui se menciona no exime al propietario del Bot, Sub Bot o usuario del bot de la sanciones que se puedan derivar❗*
+> El desconocimiento de lo que aqui se menciona no exime al propietario del Bot, Sub Bot o usuario del bot de la sanciones que se puedan derivar❗*
 *⚠️ Términos de privacidad*
 _1.- La información que reciba el Bot NO se comparte con ningún tercero ni con nadie_
 _2.- Las imágenes/videos/sticker/audios/etc no son compartidos con nadie_
