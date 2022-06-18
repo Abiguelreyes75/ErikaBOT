@@ -15,7 +15,7 @@ sourceUrl: `https://wa.me/16479546631`}}})
 //const data = global.owner.filter(([id, isCreator]) => id && isCreator)
 //this.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
   
-let pp = './media/menus/Menu2.jpg'
+let pp = './media/menus/terminos.jpg'
 let str = `🧡 *=> El desconocimiento de lo que aqui se menciona no exime al propietario del Bot, Sub Bot o usuario del bot de la sanciones que se puedan derivar❗*
 *⚠️ Términos de privacidad*
 _1.- La información que reciba el Bot NO se comparte con ningún tercero ni con nadie_
