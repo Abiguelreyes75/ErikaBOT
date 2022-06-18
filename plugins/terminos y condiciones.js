@@ -1,5 +1,5 @@
 // NO MODIFICAR ABSOLUTAMENTE NADA DE AQUI
-let handler = async (m, { conn, text }) => {
+let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
     let name = m.fromMe ? conn.user : conn.contacts[m.sender]
 
   conn.reply(m.chat, `
@@ -33,4 +33,4 @@ _- Si todavía tienes alguna duda o reclamo de lo mencionado aqui o referente al
 handler.customPrefix = /términos y condiciones y privacidad|terminosycondicionesyprivacidad|terminosycondiciones|terminos y condiciones y privacidad|terminos y condiciones|terminos y condiciones|terminos de uso|Terminos de uso|Terminó se uso|términos de uso|Términos de uso|Términos y condiciones/
 handler.command = new RegExp
 
-module.exports = handler 
+export default handler 
