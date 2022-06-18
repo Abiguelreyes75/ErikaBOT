@@ -1,6 +1,22 @@
+import fs from 'fs'
 function handler(m, { conn }) {
 let text = `
-> El desconocimiento de lo que aqui se menciona no exime al propietario del Bot, Sub Bot o usuario del bot de la sanciones que se puedan derivar❗*
+*𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤 | 𝘾𝙤𝙣𝙩𝙖𝙘𝙩* 
+*Wa.me/16479546631 (BOT)*
+*https://www.instagram.com/abiguelreyes75*
+`.trim()   
+conn.reply(m.chat, text, m, {
+contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
+title: 'Erika-BOT | Erika-BOT',
+body: '𝐂𝐫𝐞𝐚𝐝𝐨𝐫𝐚 | 𝐂𝐫𝐞𝐚𝐭𝐨𝐫',         
+previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
+sourceUrl: `https://wa.me/16479546631`}}})
+  
+//const data = global.owner.filter(([id, isCreator]) => id && isCreator)
+//this.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
+  
+let pp = './media/menus/Menu2.jpg'
+let str = `🧡 *=> El desconocimiento de lo que aqui se menciona no exime al propietario del Bot, Sub Bot o usuario del bot de la sanciones que se puedan derivar❗*
 *⚠️ Términos de privacidad*
 _1.- La información que reciba el Bot NO se comparte con ningún tercero ni con nadie_
 _2.- Las imágenes/videos/sticker/audios/etc no son compartidos con nadie_
@@ -18,11 +34,10 @@ _6.- Los audios/notas de voz/imágenes/videos o cualquier otro archivo multimedi
 _- Si en algún momento recibe un mensaje del numero del Bot y no es un comando posiblemente sea de el propietario del Bot o el propietario del numero, este es un persona real por lo que se le pide que no le falte el respeto_
 *⁉️ Te quedaron dudas?*
 _- Si todavía tienes alguna duda o reclamo de lo mencionado aqui o referente al Bot, contáctame a mi numero personal al cual estaré respondiendo lo antes posible para brindarte una solución y/o hacerme responsable de alguna reclamación_ 
-> wa.me/5219996125657
-> Bruno Sobrino 
-> Correo electronico: theshadowbrokers133@gmailcom
-→ *Solo contactar por temas serios, para preguntas del Bot mas generales contáctame al privado con el comando del comando #owner (al numero wa.me/17722386341)*
-*∆ THE SHADOW BROKERS - BOT ∆*`
+> wa.me/16479546631
+> Erika BOT 
+> Correo electronico: MUY PRONTO
+→ *Solo contactar por temas serios, para preguntas del Bot mas generales contáctame al privado con el comando del comando #owner (al numero wa.me/16479546631)*`
 
 conn.sendHydrated(m.chat, str, wm, pp, 'https://www.instagram.com/abiguelreyes75', '𝙄𝙣𝙨𝙩𝙖𝙜𝙧𝙖𝙢', null, null, [
 ['𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙘𝙞ó𝙣 | 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙩𝙞𝙤𝙣', '.infobot'],
@@ -31,5 +46,5 @@ conn.sendHydrated(m.chat, str, wm, pp, 'https://www.instagram.com/abiguelreyes75
 }
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
-handler.command = /^(terminos|privacidad)$/i
+handler.command = /^(contacto|owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador)$/i
 export default handler
