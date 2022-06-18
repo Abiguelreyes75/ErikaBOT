@@ -1,3 +1,4 @@
+function handler(m, { conn }) {
 let text = `
 > El desconocimiento de lo que aqui se menciona no exime al propietario del Bot, Sub Bot o usuario del bot de la sanciones que se puedan derivar❗*
 *⚠️ Términos de privacidad*
