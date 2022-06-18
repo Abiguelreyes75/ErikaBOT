@@ -1,4 +1,3 @@
-// NO MODIFICAR ABSOLUTAMENTE NADA DE AQUI
 let handler = async (m, { conn, text }) => {
     let name = m.fromMe ? conn.user : conn.contacts[m.sender]
 
@@ -21,16 +20,16 @@ _6.- Los audios/notas de voz/imágenes/videos o cualquier otro archivo multimedi
 _- Si en algún momento recibe un mensaje del numero del Bot y no es un comando posiblemente sea de el propietario del Bot o el propietario del numero, este es un persona real por lo que se le pide que no le falte el respeto_
 *⁉️ Te quedaron dudas?*
 _- Si todavía tienes alguna duda o reclamo de lo mencionado aqui o referente al Bot, contáctame a mi numero personal al cual estaré respondiendo lo antes posible para brindarte una solución y/o hacerme responsable de alguna reclamación_ 
-> wa.me/16479546631
-> Erika-BOT 
-> Correo electronico: NO DISPONIBLE DE MOMENTO
-→ *Solo contactar por temas serios, para preguntas del Bot mas generales contáctame al privado con el comando del comando #owner (al numero wa.me/16479546631)*
-*∆ ERIKA-BOT ∆*
+> wa.me/5219996125657
+> Bruno Sobrino 
+> Correo electronico: theshadowbrokers133@gmailcom
+→ *Solo contactar por temas serios, para preguntas del Bot mas generales contáctame al privado con el comando del comando #owner (al numero wa.me/17722386341)*
+*∆ THE SHADOW BROKERS - BOT ∆*
 `.trim(), m)
     let mentionedJid = [m.sender]
 }
     
-handler.customPrefix = /términos y condiciones y privacidad|terminosycondicionesyprivacidad|terminosycondiciones|terminos y condiciones y privacidad|terminos y condiciones|terminos y condiciones|terminos de uso|Terminos de uso|Terminó se uso|términos de uso|Términos de uso|Términos y condiciones/
+handler.customPrefix = /términos y condiciones y privacidad|terminosycondicionesyprivacidad|terminosycondiciones|terminos y condiciones y privacidad|terminos y condiciones|terminos y condiciones|terminos de uso|Terminos de uso|Terminó se uso|términos de uso|Términos de uso|Términos y condiciones/i
 handler.command = new RegExp
 
 module.exports = handler 
