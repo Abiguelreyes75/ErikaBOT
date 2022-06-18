@@ -46,5 +46,5 @@ conn.sendHydrated(m.chat, str, wm, pp, 'https://www.instagram.com/abiguelreyes75
 }
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
-handler.command = /^(contacto|owner|creator|propietario|dueño|dueña|propietaria|dueño|creadora|creador)$/i
+handler.command = /^(terminos)$/i
 export default handler
