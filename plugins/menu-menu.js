@@ -71,8 +71,9 @@ let str = `
 
 *<𝕀ℕ𝔽𝕆ℝ𝕄𝔸ℂ𝕀𝕆ℕ 𝔻𝔼𝕃 𝔹𝕆𝕋/>*
 
+° ඬ ⃟ 💟 _${usedPrefix}terminos y condiciones y privacidad_
 ° ඬ ⃟ 💟 _${usedPrefix}grupos_
-° ඬ ⃟ 💟 _${usedPrefix}cuentasgatabot_
+° ඬ ⃟ 💟 _${usedPrefix}cuentaserikabot_
 ° ඬ ⃟ 💟 _${usedPrefix}estado_
 ° ඬ ⃟ 💟 _${usedPrefix}infobot_
 ° ඬ ⃟ 💟 _${usedPrefix}donar_
@@ -130,6 +131,7 @@ let str = `
 
 *<ℝ𝔼ℙ𝕆ℝ𝕋𝔼𝕊 𝔻𝔼 𝔽𝔸𝕃𝕃𝕆𝕊/>*
 
+ 
 ° ඬ⃟🔰 _${usedPrefix}reporte *<texto>*_
 
 *<𝔻𝔼𝕊ℂ𝔸ℝ𝔾𝔸𝕊/>*
