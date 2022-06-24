@@ -5,7 +5,7 @@ const dir = [
   'https://img-15.stickers.cloud/packs/ebee02f5-9df4-4e75-8bd2-11a1aa9cc65b/webp/17ea85f7-05ca-4adc-96bd-21d47ad1a7fe.webp'
 ];
 let handler = async (m, { conn }) => {
-conn.sendFile(m.chat, dir[Math.floor(Math.random() * dir.length)], 'dadu.webp', '', m)
+conn.sendFile(m.chat, dir[Math.floor(Math.random() * dir.length)], 'sticker.webp', '', m)
 }
 handler.customPrefix = /ok|ok|ok|ok|ok|ok/
 handler.command = new RegExp
