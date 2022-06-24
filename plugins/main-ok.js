@@ -1,18 +1,15 @@
-import axios from "axios"
-let handler = async (m, {command, conn}) => {
-let res = await axios(pickRandom(meme))
-let json = res.data
-let url = json.url
-conn.sendButton(m.chat, `_${command}_`.trim(), author, url, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `/${command}`]], m)
-}
-handler.help = ['ok']
-handler.tags = ['random']
+import { sticker } from '../lib/sticker.js'
+import fetch from 'node-fetch'
+import MessageType from '@adiwajshing/baileys'
+let handler = async (m, { conn}) => {
+try {
+if(m.quoted?.sender) m.mentionedJid.push(m.quoted.sender)
+if(!m.mentionedJid.length) m.mentionedJid.push(m.sender)
+let res = await fetch('https://telegra.ph/file/f61a7c96f3f86b6c5214f.png')
+let json = await res.json()
+let { url } = json
+let stiker = await sticker(null, url, `+${m.sender.split('@')[0]} le dio palmaditas a ${m.mentionedJid.map((user)=>(user === m.sender)? 'alguien ': `+${user.split('@')[0]}`).join(', ')}`)
+conn.sendFile(m.chat, stiker, null, { asSticker: true })
+} catch (e) { }}
 handler.command = /^(ok)$/i
 export default handler
-
-function pickRandom(list) {
-return list[Math.floor(list.length * Math.random())]}
-
-const meme = [
-"https://telegra.ph/file/f61a7c96f3f86b6c5214f.png"
-]
