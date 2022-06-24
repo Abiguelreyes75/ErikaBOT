@@ -1,6 +1,6 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 
-    if (stiker) return conn.sendFile(m.chat, 'https://telegra.ph/file/f61a7c96f3f86b6c5214f.png', m, { packname: "sticker by", author: "Elyas" })
+    if (stiker) return conn.sendFile(m.chat, stiker, 'https://telegra.ph/file/f61a7c96f3f86b6c5214f.png', '', m)
    throw stiker.toString()
     }
     
