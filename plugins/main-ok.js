@@ -9,6 +9,6 @@ const dir = [
                                                   let handler = async (m, { conn }) => {
                                                   conn.sendFile(m.chat, dir[Math.floor(Math.random() * dir.length)], 'sticker.webp', '', m)
   }
-                                                  handler.customPrefix = /Ok|ok|ok|ok|ok|ok/
+                                                  handler.customPrefix = /Ok|ok|okis|okys/
                                                   handler.command = new RegExp
                                                    export default handler
