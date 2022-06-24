@@ -1,13 +1,10 @@
-let 
-    
-function conn.sendImageAsSticker(){
+let handler = async (m, { conn, text }) => {
+    let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
+    conn.sendFile(m.chat, global.API('xteam', '/attp', { file: '', text: teks }), 'attp.webp', '', m, false, { asSticker: true })
+}
+handler.help = ['attp <teks>']
+handler.tags = ['sticker']
 
+handler.command = /^attp$/i
 
-    
-    document.getElementById("resultado").innerHTML='<img src="https://telegra.ph/file/f61a7c96f3f86b6c5214f.png" id="f61a7c96f3f86b6c5214f" style="width:30px; height:30px;
-   
-
-    handler.customPrefix = /^(ok)$/i
-    handler.command = new RegExp
-    
-    export default handler
+export default handler
