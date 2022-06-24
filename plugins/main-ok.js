@@ -7,4 +7,4 @@ let handler = async (m, { conn, text }) => {
     handler.customPrefix = /^(ok)$/i
     handler.command = new RegExp
     
-    module.exports = handler
+    export default handler
