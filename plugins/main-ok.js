@@ -1,3 +1,5 @@
+//CREATE BY ERIKA-BOT ESTE COMANDO SIRVE PARA GENERAR STICKERS ALEATORIOS SIN PREFIJO SI VAS A CAMBIAR LOS STICKERS DE ESTE ARCHIVO ASEGURATE QUE SEAN .WEBP
+
 const dir = [
   'https://img-03.stickers.cloud/packs/210a9e68-b249-405f-8ea1-9af015ef074a/webp/c5b7bded-e0f0-4f79-86aa-ffd825aba680.webp',
   'https://img-14.stickers.cloud/packs/dd1af312-1193-4190-bd9f-0f718a673c7f/webp/25afa7d4-d836-4bb8-8038-ab122a9d0ef8.webp',
@@ -7,6 +9,6 @@ const dir = [
                                                   let handler = async (m, { conn }) => {
                                                   conn.sendFile(m.chat, dir[Math.floor(Math.random() * dir.length)], 'sticker.webp', '', m)
   }
-                                                  handler.customPrefix = /ok|ok|ok|ok|ok|ok/
+                                                  handler.customPrefix = /Ok|ok|ok|ok|ok|ok/
                                                   handler.command = new RegExp
                                                    export default handler
