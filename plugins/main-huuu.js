@@ -6,7 +6,7 @@ conn.sendImageAsSticker(m.chat, pickRandom(stikerhuuu), m, { packname: "sticker 
 handler.customPrefix = /^(huuu)$/i
 handler.command = new RegExp
 
-module.exports = handler
+export default handler
 
 function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
