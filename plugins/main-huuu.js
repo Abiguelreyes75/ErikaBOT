@@ -1,4 +1,4 @@
-let handler = async (m, { conn, text, usedPrefix, command }) => {
+let handler = async (m, { conn,}) => {
 
 conn.sendImageAsSticker(m.chat, pickRandom(stikerhuuu), m, { packname: "sticker by", author: "Elyas" })
 }
