@@ -9,8 +9,8 @@ const dir = [
        //al poner te quiero  sin prefijo en el chat se envian los stickers 
 ];
 
-let hanler = async(m,{conn})=> {
-    conn.sendfile(m.chat, dir[math.floor(math.random()*dir.length)],'sticker.webp', '',m)
+let hanler = async(m,{ conn }) => {
+    conn.sendfile(m.chat, dir[Math.floor(Math.random()*dir.length)],'sticker.webp', '',m)
 
 }
 hanler.customprefix = /tequiero|Te quiero/
