@@ -26,8 +26,8 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 ✦ 𝙐𝙍𝙇
 ✦ ${url}
 ╰━━━━━━━❰ *${vs}* ❱━━━━━━⬣`.trim(), wm, thumbnail, '', '', null, null, [
-    ['𝙑𝙞𝙙𝙚𝙤 | 1️⃣', `${usedPrefix}ytv ${url} yes`],
-    ['𝘼𝙪𝙙𝙞𝙤 | 1️⃣', `${usedPrefix}yta ${url} yes`]
+    ['𝙑𝙞𝙙𝙚𝙤 | ✿', `${usedPrefix}ytv ${url} yes`],
+    ['𝘼𝙪𝙙𝙞𝙤 | ✿', `${usedPrefix}yta ${url} yes`]
   ], m)
     
 }catch(e){
