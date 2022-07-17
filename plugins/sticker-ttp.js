@@ -1,3 +1,4 @@
+
 import { sticker } from '../lib/sticker.js'
 let handler = async (m, { conn, text }) => {
 let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
@@ -7,5 +8,5 @@ throw stiker.toString()
 }
 handler.help = ['ttp <teks>']
 handler.tags = ['sticker']
-handler.command = /^ttp$/i
+handler.command = /^ttp6$/i 
 export default handler
