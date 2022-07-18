@@ -5,7 +5,7 @@ let handler  = async (m, { conn, usedPrefix, command }) => {
     handler.help = ['videoxxx']
     handler.tags = ['random']
     handler.command = /^(pornoaleatorio|pornopremium|pornoalevid|pornovidale|pornopremiumvid|pornopremiumv|Pornopremium|Pornopremiumvid)$/i
-    //handler.premium = true
+    //handler.prems = true
     handler.level = 10
     handler.limit = 2
     export default handler
