@@ -645,7 +645,7 @@ export async function participantsUpdate({ id, participants, action }) {
                             (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
                             let apii = await this.getFile(pp)
                             this.sendHydrated(id, text, groupMetadata.subject, apii.data,                                                       'MUY PRONTO', '𝐄𝐑𝐈𝐊𝐀-𝐁𝐎𝐓', null, null, [
-                            [(action == 'add' ? '𝙎𝙚 𝙪𝙣𝙞𝙤 🥳 | 𝙃𝙞!!' : '𝙎𝙚 𝙛𝙪𝙚 𝙪𝙣 𝙍𝙖𝙣𝙙𝙤𝙢 🧐 | 𝘽𝙮𝙚'), '.s'],    
+                            [(action == 'add' ? 'SE UNIO UN FAN 🥳 | 𝙃𝙞!!' : '𝗦𝗘 𝗙𝗨𝗘 𝗨𝗡 𝗢𝗕𝗝𝗘𝗧𝗢 𝗦𝗘𝗫𝗨𝗔𝗟 🧐 | 𝘽𝙮𝙚'), '.s'],    
                             ['💖 𝙄𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪 | 𝙂𝙤 𝙈𝙚𝙣𝙪', '/menu']
                             ], '', { mentions: [user]})
                            }
