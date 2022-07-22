@@ -145,7 +145,7 @@ ptt: true
 
 
 if (command == 'topfieles') {
-let vn = './media/fieles.mp3'
+let vn = './media/otaku.mp3'
 let top = `*🌈TOP 10 FIELES DEL GRUPO🌈*
 
 *_1.- ${user(a)}_*
@@ -159,7 +159,7 @@ let top = `*🌈TOP 10 FIELES DEL GRUPO🌈*
 *_9.- ${user(i)}_*
 *_10.- ${user(j)}_*`
 m.reply(top, null, { mentions: conn.parseMention(top) })
-conn.sendFile(m,chat, vn, 'fieles.mp3', null, m, true, {
+conn.sendFile(m,chat, vn, 'otaku.mp3', null, m, true, {
 type: 'audioMessage',
 ptt: true
 })}
