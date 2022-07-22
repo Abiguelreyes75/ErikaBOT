@@ -164,7 +164,7 @@ type: 'audioMessage',
 ptt: true
 })}
 }
-handler.help = handler.command = ['topgays','topotakus']
+handler.help = handler.command = ['topgays','topotakus','fiel']
 handler.tags = ['games']
 handler.group = true
 export default handler
