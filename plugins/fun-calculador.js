@@ -65,9 +65,17 @@ conn.reply(m.chat, `
 _*${text.toUpperCase()}* *ES* *${(500).getRandom()}%* *${command.replace('how', '').toUpperCase()} 🫦👅, QUIEN QUIERE DE SUS SERVICIOS? XD*_
 `.trim(), m, m.mentionedJid ? {
 mentions: m.mentionedJid
-} : {})}         
+} : {})}
+
+if (command == 'fiel') {
+conn.reply(m.chat, `
+_*${text.toUpperCase()}* *ES* *${(500).getRandom()}%* *${command.replace('how', '').toUpperCase()} 🫦👅, NADIE LE CREEA A ESTE FIEL!! XD*_
+`.trim(), m, m.mentionedJid ? {
+mentions: m.mentionedJid
+} : {})} 
+  
 }
 handler.help = ['gay2', 'lesbiana', 'pajero', 'pajera', 'puto', 'puta', 'manco', 'manca', 'rata', 'prostituta', 'prostituto'].map(v => v + ' @tag | nombre')
 handler.tags = ['calculator']
-handler.command = /^gay2|lesbiana|pajero|pajera|puto|puta|manco|manca|rata|prostituta|prostituto/i
+handler.command = /^gay2|lesbiana|pajero|pajera|puto|puta|manco|manca|rata|prostituta|prostituto|fiel/i
 export default handler
