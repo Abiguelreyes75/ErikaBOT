@@ -126,7 +126,15 @@ if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
 throw false
 }}
-chat.antiLink2 = isEnable 
+chat.antiLink2 = isEnable
+break
+case 'stickers':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.stickers = isEnable
 break
 case 'modohorny':
 if (m.isGroup) {
