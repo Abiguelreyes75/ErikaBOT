@@ -14,8 +14,8 @@ const dir = [
     ];
     
     let handler = async(m, { conn }) => {
-        conn.sendFile(m.chat, dir[Math.floor(Math.random() * dir.length)], 'sticker.webp', '', m)
-        conn.sendFile(m.chat, dir, null, { asSticker: true })
+        conn.sendFile(m.chat, dir, , null, { asSticker: true })[Math.floor(Math.random() * dir.length)], 'sticker.webp', '', m)
+       
     
     }
     handler.customPrefix = /Ok|ok|okis|okys/
