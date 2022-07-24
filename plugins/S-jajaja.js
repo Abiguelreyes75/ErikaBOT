@@ -5,7 +5,7 @@ if (!db.data.chats[m.chat].stickers && m.isGroup) throw `${ag}𝙇𝙊𝙎 𝘾�
 
 let nombre = '🐈 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
 let nombre2 = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
- 
+ //al poner jaja se mandan stickers randoms al chat poner formatos jpg o gif
 const s = [
 'https://i.gifer.com/99do.gif',
 'https://i.gifer.com/G0ph.gif',
