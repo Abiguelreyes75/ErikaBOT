@@ -16,7 +16,7 @@ const s = [
 let stiker = await sticker(null, s[Math.floor(Math.random() * s.length)], nombre, nombre2)
 conn.sendFile(m.chat, stiker, null, { asSticker: true })
 }
-handler.customPrefix = /ja/i
+handler.customPrefix = /jaja/i
 handler.command = new RegExp
 handler.exp = 50
 export default handler
