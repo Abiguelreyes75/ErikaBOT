@@ -1,3 +1,4 @@
+/*
 const dir = [
 
 'https://img-03.stickers.cloud/packs/2354561b-cfd2-4fb1-9976-2d21a119e1bf/webp/c8ce7453-592f-476e-a0a5-131a9da17ae3.webp',
@@ -16,3 +17,4 @@ let handler = async(m, { conn }) => {
 handler.customPrefix = /tequiero|Te quiero/
 handler.command = new RegExp
 export default handler
+*/
