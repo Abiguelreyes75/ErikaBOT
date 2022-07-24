@@ -9,7 +9,7 @@ let nombre2 = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
 const s = [
 'https://i.gifer.com/99do.gif',
 'https://i.gifer.com/G0ph.gif',
-'https://i.gifer.com/Jc5p.gif',
+'https://i.gifer.com/VLgZ.gif',
 'https://i.gifer.com/4q.gif'
 ];  
  
