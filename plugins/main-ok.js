@@ -16,5 +16,5 @@ const dir = [
     }
     handler.customPrefix = /Ok|ok|okis|okys/
     handler.command = new RegExp
-    export default handler /*
+    export default handler */
                                                  
