@@ -6,7 +6,7 @@ let nombre = '🌹 𝐄𝐑𝐈𝐊𝐀-𝐁𝐎𝐓'
 let nombre2 = '𝐄𝐑𝐈𝐊𝐀-𝐁𝐎𝐓'
  
 const s = [
-'https://i.gifer.com/3OO4v.gif'
+'https://i.gifer.com/3OO52.gif'
 ];  
  
 let stiker = await sticker(null, s[Math.floor(Math.random() * s.length)], nombre, nombre2)
