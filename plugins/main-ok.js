@@ -1,24 +1,16 @@
-let handler = async(m, { conn }) => {
-if (!db.data.chats[m.chat].stickers && m.isGroup) throw `${ag}𝙇𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 𝘿𝙀 𝙎𝙏𝙄𝘾𝙆𝙀𝙍𝙎 𝙀𝙎𝙏𝘼𝙉 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝘿𝙊𝙎 𝙐𝙎𝙀 *#on stickers* 𝙋𝘼𝙍𝘼 𝘼𝘾𝙏𝙄𝙑𝘼𝙍\n\n𝙏𝙃𝙀 𝙎𝙏𝙄𝘾𝙆𝙀𝙍𝙎 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 𝘼𝙍𝙀 𝘿𝙄𝙎𝘼𝘽𝙇𝙀𝘿 𝙐𝙎𝙀 *#on stickers* 𝙏𝙊 𝙀𝙉𝘼𝘽𝙇𝙀`
-
-let nombre = '🐈 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
-let nombre2 = '𝙂𝙖𝙩𝙖 𝘿𝙞𝙤𝙨'
-
 const dir = [
 
-   'https://img-03.stickers.cloud/packs/210a9e68-b249-405f-8ea1-9af015ef074a/webp/c5b7bded-e0f0-4f79-86aa-ffd825aba680.webp',
-  'https://img-14.stickers.cloud/packs/dd1af312-1193-4190-bd9f-0f718a673c7f/webp/25afa7d4-d836-4bb8-8038-ab122a9d0ef8.webp',
-  'https://img-03.stickers.cloud/packs/210a9e68-b249-405f-8ea1-9af015ef074a/webp/361b3124-eb08-42ea-91b8-6516d250b5a8.webp',
-  'https://img-15.stickers.cloud/packs/ebee02f5-9df4-4e75-8bd2-11a1aa9cc65b/webp/17ea85f7-05ca-4adc-96bd-21d47ad1a7fe.webp'
+    'https://img-03.stickers.cloud/packs/2354561b-cfd2-4fb1-9976-2d21a119e1bf/webp/c8ce7453-592f-476e-a0a5-131a9da17ae3.webp',
+    'https://img-03.stickers.cloud/packs/2354561b-cfd2-4fb1-9976-2d21a119e1bf/webp/bf5c8c69-591c-4b12-8af4-105f34dc3712.webp',
+    'https://img-11.stickers.cloud/packs/add0ec11-7d6a-4638-98c6-811d1d7dbeb5/webp/0a99009a-265e-4494-8d8e-62031316b46c.webp',
+    'https://img-11.stickers.cloud/packs/add0ec11-7d6a-4638-98c6-811d1d7dbeb5/webp/ddc71450-8f2f-4ad0-9cbc-bb6fd88ab9cb.webp',
+    'https://img-04.stickers.cloud/packs/371fd910-9769-4dbc-8347-8be2955a08df/webp/6dbe52d3-c12f-44c7-bae6-9352cf0ff3c9.webp'
     
-           //al poner ok  sin prefijo en el chat se envian los stickers PARAERIKABOT
+           //al poner te quiero  sin prefijo en el chat se envian los stickers PARAERIKABOT
     ];
     
-    
-let stiker = await sticker(null, s[Math.floor(Math.random() * s.length)], nombre, nombre2)
-conn.sendFile(m.chat, stiker, null, { asSticker: true })
-        
-        
+    let handler = async(m, { conn }) => {
+        conn.sendFile(m.chat, dir[Math.floor(Math.random() * dir.length)], 'sticker.webp', '', m)
     
     }
     handler.customPrefix = /Ok|ok|okis|okys/
