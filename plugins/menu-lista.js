@@ -47,7 +47,7 @@ rows: [
       {title: "💎 𝙈𝙀𝙉𝙐 𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊(𝘼) | 𝙈𝙀𝙉𝙐 𝙊𝙒𝙉𝙀𝙍 💎", description: null, rowId: `${usedPrefix}ownermenu`},
       {title: "🔞 𝙈𝙀𝙉𝙐 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 +18 | 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 +18 🔞", description: null, rowId: `${usedPrefix}hornymenu`},
       {title: "📄 𝙏𝙀𝙍𝙈𝙄𝙉𝙊𝙎, 𝘾𝙊𝙉𝘿𝙄𝘾𝙄𝙊𝙉𝙀𝙎 𝙔 𝙋𝙍𝙄𝙑𝘼𝘾𝙄𝘿𝘼𝘿 📄", description: null, rowId: `términos`},
-      {title: "🤑 𝐇𝐀𝐂𝐄𝐑 𝐀𝐏𝐔𝐄𝐒𝐓𝐀|𝐌𝐀𝐊𝐄 𝐀 𝐁𝐄𝐓 🤑", description: null, rowId: `${usedPrefix}hacer apuesta`},
+      {title: "🤑 𝐇𝐀𝐂𝐄𝐑 𝐀𝐏𝐔𝐄𝐒𝐓𝐀|𝐌𝐀𝐊𝐄 𝐀 𝐁𝐄𝐓 🤑", description: null, rowId: `${usedPrefix}hacerapuesta`},
       
 
 ]}, ]
