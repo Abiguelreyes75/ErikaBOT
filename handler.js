@@ -294,6 +294,7 @@ export async function handler(chatUpdate) {
                     delete: true,
                     modohorny: true,
                     stickers: true,
+                    autonivel: true,
                     autosticker: false,
                     audios: true,
                     antiLink: false,
