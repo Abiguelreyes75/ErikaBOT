@@ -171,7 +171,7 @@ let sss = `
 await conn.sendHydrated(m.chat, `${sss}\n\n${end}`, wm, null, md, '𝐄𝐑𝐈𝐊𝐀-𝐁𝐎𝐓', null, null, [
 ['💎 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝙊𝙏𝙍𝘼 𝙑𝙀𝙕 | 𝘼𝙂𝘼𝙄𝙉', `${usedPrefix}slot3 ${apuesta}`],
 ['⚡ 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝘾𝙊𝙉 𝙀𝙓𝙋', `${usedPrefix}slot1 ${apuesta}`],
-['🐈 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝘾𝙊𝙉 𝙂𝘼𝙏𝘼𝘾𝙊𝙄𝙉𝙎', `${usedPrefix}slot2 ${apuesta}`]
+['🐈 𝘼𝙋𝙊𝙎𝙏𝘼𝙍 𝘾𝙊𝙉 𝐄𝐑𝐈𝐊𝐀𝐂𝐎𝐈𝐍', `${usedPrefix}slot2 ${apuesta}`]
 ], m,)}
         
         
