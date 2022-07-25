@@ -111,7 +111,13 @@ let str = `
 ° ඬ⃟🎖️ _${usedPrefix}formarpareja_
 ° ඬ⃟🎖️ _${usedPrefix}verdad_
 ° ඬ⃟🎖️ _${usedPrefix}reto_
-° ඬ⃟🎖️ _${usedPrefix}apostar_
+
+
+*<𝕄𝔼ℕ𝕌 𝔻𝔼 𝔸ℙ𝕌𝔼𝕊𝕋𝔸𝕊>*
+° ඬ⃟ 🤑 _${usedPrefix}apostar_
+° ඬ⃟ 🤑 _${usedPrefix}hacer apuesta_
+
+
 
 *<𝔸ℂ𝕋𝕀𝕍𝔸ℝ 𝕆 𝔻𝔼𝕊𝔸ℂ𝕋𝕀𝕍𝔸ℝ/>*
 
