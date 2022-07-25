@@ -136,17 +136,10 @@ throw false
 }}
 chat.stickers = isEnable
 break
-
 case 'autolevelup':
 isUser = true
 user.autolevelup = isEnable
-break
-
-
-
-
-         
-
+break        
 case 'modohorny':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
