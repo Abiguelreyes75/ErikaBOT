@@ -115,7 +115,7 @@ let str = `
 
 *<𝕄𝔼ℕ𝕌 𝔻𝔼 𝔸ℙ𝕌𝔼𝕊𝕋𝔸𝕊>*
 ° ඬ⃟ 🤑 _${usedPrefix}apostar_
-° ඬ⃟ 🤑 _${usedPrefix}hacer apuesta_
+° ඬ⃟ 🤑 _${usedPrefix}hacerapuesta_
 
 
 
