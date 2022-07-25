@@ -98,7 +98,7 @@ conn.sendHydrated(m.chat, menu, wm, pp, 'MUY PRONTO', '𝐄𝐑𝐈𝐊𝐀-𝐁
 
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = /^(hacer apuesta)$/i
+handler.command = /^(hacerapuesta)$/i
 //handler.register = true
 handler.exp = 70
 export default handler
