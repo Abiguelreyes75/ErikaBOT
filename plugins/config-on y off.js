@@ -51,8 +51,8 @@ footer: `╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
 ┣ ඬ⃟ℹ️ _${usedPrefix}disable *audios*_
 ┣ ඬ⃟ℹ️ _${usedPrefix}enable *autosticker*_
 ┣ ඬ⃟ℹ️ _${usedPrefix}disable *autosticker*_
-┣ ඬ⃟ℹ️ _${usedPrefix}off *stickers*_
-┣ ඬ⃟ℹ️ _${usedPrefix}on *stickers*_
+┣ ඬ⃟ℹ️ _${usedPrefix}enable *stickers*_
+┣ ඬ⃟ℹ️ _${usedPrefix}disable *stickers*_
 ┗━━━━━━━━━━━━━┛
 ${author}`,
 title: null,
