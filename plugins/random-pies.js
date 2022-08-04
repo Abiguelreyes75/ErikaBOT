@@ -1,13 +1,14 @@
-import  fetch from 'node-fetch';
-let  handler =   async (m,  { conn,  command }) => {
+import fetch from 'node-fetch'
+let handler = async (m, { conn, command }) => {
 if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '[ ⚠️ ] Los comandos +18 estan desactivados en este grupo, si es administrador de este grupo y desea activarlos escriba #enable nsfw'
-let  url = pies[ Math .floor(Math .random() * pies.length ) ]
-conn.sendButton(m.chat, '🎶 PIES 🎶', author, url, [['🔄 𝐬𝐢𝐠𝐮𝐢𝐞𝐧𝐭𝐞 🔄', `/${command}`]], m)
-} 
+let url = pies[Math.floor(Math.random() * pies.length)]
+conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, [['🔄 𝐬𝐢𝐠𝐮𝐢𝐞𝐧𝐭𝐞 🔄', `/${command}`]], m)
+}
 handler.help = ['pies']
-handler.command =  /^pies/
-handler. level = 5
-handler.exp = 20
+handler.tags = ['internet']
+handler.command = /^(pies)$/
+handler.exp = 50
+handler.level = 5
 export default handler
 
 
