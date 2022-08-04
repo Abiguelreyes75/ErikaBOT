@@ -7,7 +7,7 @@ conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, [['🔄 𝐬𝐢
   let handler = async (m, { conn, command }) => {
 if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '[ ⚠️ ] Los comandos +18 estan desactivados en este grupo, si es administrador de este grupo y desea activarlos escriba #enable nsfw'
 let url = prueba[Math.floor(Math.random() * prueba.length)]
-conn.sendButton(m.chat, `_${command}_`.trim(), author, haha.data, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `/${command}`]], m)}
+conn.sendButton(m.chat, `_${command}_`.trim(), author, url [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `/${command}`]], m)}
 
   
   
