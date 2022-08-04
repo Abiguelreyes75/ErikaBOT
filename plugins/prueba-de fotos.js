@@ -4,13 +4,12 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '[ ⚠️ ] Los comando
 
 
   let url = prueba[Math.floor(Math.random() * prueba.length)]
-await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, [['🔄 𝐬𝐢𝐠𝐮𝐢𝐞𝐧𝐭𝐞 🔄', `/${command}`]], m)
-await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, [['🔄 𝐬𝐢𝐠𝐮𝐢𝐞𝐧𝐭𝐞 🔄', `/${command}`]], m)
-await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, [['🔄 𝐬𝐢𝐠𝐮𝐢𝐞𝐧𝐭𝐞 🔄', `/${command}`]], m)
-await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, [['🔄 𝐬𝐢𝐠𝐮𝐢𝐞𝐧𝐭𝐞 🔄', `/${command}`]], m)
-await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, [['🔄 𝐬𝐢𝐠𝐮𝐢𝐞𝐧𝐭𝐞 🔄', `/${command}`]], m)
-await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, [['🔄 𝐬𝐢𝐠𝐮𝐢𝐞𝐧𝐭𝐞 🔄', `/${command}`]], m)
-await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, [['🔄 𝐬𝐢𝐠𝐮𝐢𝐞𝐧𝐭𝐞 🔄', `/${command}`]], m)
+  await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, null, m)
+  await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, null, m)
+  await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, null, m)
+  await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, null, m)
+  await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, null, m)
+  await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, null, m)
   
 }
 
