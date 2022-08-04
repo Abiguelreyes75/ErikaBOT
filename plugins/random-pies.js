@@ -19,7 +19,6 @@ global.pies = [
 "https://i.pinimg.com/originals/33/8e/f3/338ef392abc25df264805322c8f9f782.jpg",
 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU1nvWjV23QS1Sa2nH_mgk9dIZ8YnO7k-4xA&usqp=CAU",
 "https://i.pinimg.com/236x/bc/52/4c/bc524c4fc826416bbea72c47081956cf.jpg',
-"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeP44eZxpxwACSXbhb3WktWU7jFhMvKYVgh_WTa08dtYHrui1f4quUxjoRZFzVGaz9xak&usqp=CAU",
 "https://i.pinimg.com/originals/9f/87/06/9f8706e96df3d71dfae29d76b3b02cd0.jpg",
 "https://i.pinimg.com/736x/50/9f/71/509f71c49048ef066072d4b71e9f6cdf.jpg",
 "https://i.pinimg.com/474x/6c/25/64/6c25641c872ac79be7523a2451e38e97.jpg",
