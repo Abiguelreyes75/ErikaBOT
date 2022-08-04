@@ -4,31 +4,15 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '[ ⚠️ ] Los comando
 
   if (command == 'tiempo') {
   let url = prueba[Math.floor(Math.random() * prueba.length)]
-conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, [['🔄 𝐬𝐢𝐠𝐮𝐢𝐞𝐧𝐭𝐞 🔄', `/${command}`]], m)}
+await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, [['🔄 𝐬𝐢𝐠𝐮𝐢𝐞𝐧𝐭𝐞 🔄', `/${command}`]], m)
+await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, null, m)
+await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, null, m)
+await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, null, m)
+await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, null, m)
+await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, null, m)
+await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, null, m)
   
-if (command == 'tiempo') {
-let url = prueba[Math.floor(Math.random() * prueba.length)]
-conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, null, m)}
-  
-  if (command == 'tiempo') {
-    let url = prueba[Math.floor(Math.random() * prueba.length)]
-conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, null, m)}
-    
-    if (command == 'tiempo') {
-      let url = prueba[Math.floor(Math.random() * prueba.length)]
-conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, null, m)}
-      
-      if (command == 'tiempo') {
-        let url = prueba[Math.floor(Math.random() * prueba.length)]
-conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, null, m)}
-        
-        
-        if (command == 'tiempo') {
-          let url = prueba[Math.floor(Math.random() * prueba.length)]
-conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, null, m)}
-
 }
-
 
 handler.help = ['pies']
 handler.tags = ['internet']
