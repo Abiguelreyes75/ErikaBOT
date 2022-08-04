@@ -5,11 +5,11 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '[ ⚠️ ] Los comando
 
   let url = prueba[Math.floor(Math.random() * prueba.length)]
 await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, m)
-  await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, m)
-  await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, m)
-  await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, m)
-  await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, m)
-  await conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, m)
+  await (m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, m)
+  await , `🥵 ♥ PIES ♥  🥵`, author, url, m)
+  await , `🥵 ♥ PIES ♥  🥵`, author, url, m)
+  await , `🥵 ♥ PIES ♥  🥵`, author, url, m)
+  await , `🥵 ♥ PIES ♥  🥵`, author, url, m)
 }
 
 handler.help = ['pies']
