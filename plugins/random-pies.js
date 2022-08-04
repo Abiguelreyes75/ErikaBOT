@@ -6,7 +6,7 @@ conn.sendButton(m.chat, `🥵 ♥ PIES ♥  🥵`, author, url, [['🔄 𝐬𝐢
 }
 handler.help = ['pies']
 handler.tags = ['internet']
-handler.command = /^(pies)$/
+handler.command = /^(piescalientes)$/
 handler.exp = 50
 handler.level = 5
 export default handler
