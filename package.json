@@ -27,7 +27,7 @@
     },
     "license": "MIT",
     "dependencies": {
-        "@adiwajshing/eslint-config": "git+https://github.com/adiwajshing/eslint-config",
+        "@adiwajshing/baileys": "^4.1.0",
         "@bochilteam/scraper": "^2.0.0",
         "awesome-phonenumber": "^2.68.0",
         "axios": "^0.24.0",
