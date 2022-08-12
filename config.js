@@ -79,7 +79,9 @@ global.author = '𝓔𝓻𝓲𝓴𝓪𝓑𝓞𝓣'
 //xxx keys
 global.keysZens = ['fiktod', 'c2459db922', 'BF39D349845E', '675e34de8a', '37CC845916', '0b917b905e6f', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
-
+//keya attp y ttp
+global.lolkeys = ['2e0da1f78d1721134b21816d', '902c3bc9d8c08b0dcf8f5373', '808693688ecc695293359089', '85faf717d0545d14074659ad']
+global.lolkeysapi = lolkeys[Math.floor(lolkeys.length * Math.random())]
 
 
 
