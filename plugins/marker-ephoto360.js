@@ -6,7 +6,7 @@
 let handler = async (m, { conn, args, command }) => { 
 let response = args.join(' ').split('|')
 if (!args[0]) throw '*[❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝚄𝙽 𝚃𝙴𝚇𝚃𝙾*'
-const = conn.reply(m.chat, '*[❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝚄𝙽 𝚃𝙴𝚇𝚃𝙾*', m)
+const = conn.reply(m.chat, '*[❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝚄𝙽 𝚃𝙴𝚇𝚃𝙾 VALIDOOOOOO*', m)
   
 try {     
 const (command == '1917') {
