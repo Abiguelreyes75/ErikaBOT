@@ -82,9 +82,8 @@ global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 //keya attp y ttp
 global.lolkeys = ['2e0da1f78d1721134b21816d', '902c3bc9d8c08b0dcf8f5373', '808693688ecc695293359089', '85faf717d0545d14074659ad']
 global.lolkeysapi = lolkeys[Math.floor(lolkeys.length * Math.random())]
-
-
-
+//keys ephoto360
+global.Key360 = ['964f-0c75-7afc']
 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 
