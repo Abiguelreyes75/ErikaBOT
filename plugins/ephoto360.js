@@ -1,8 +1,8 @@
-import axios from 'axios' 
 let handler = async(m, { conn, usedPrefix, command }) => {
-    if (!text) throw 'Masukkan Teks.....................'
+    if  (!text) throw 'Masukkan Teks.....................'
     let hyz = await fetch(`https://api.violetics.pw/api/ephoto360/${command}?apikey=zyykey&text=${text}`) 
     conn.sendButtonImg(m.chat, hyz, succes, wm, 'Thanks', 'thanks', m) 
+
     let json = res.data
     let url = json.url
 }
