@@ -1,4 +1,3 @@
-es (21 sloc)  1.23 KB
 
 /*
 - Obten mas efectos en https://violetics.pw/api/ephoto360
@@ -10,7 +9,7 @@ if (!args[0]) throw '*[❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝚄𝙽 𝚃𝙴𝚇�
 try {    
 if (command == '1917') {
 conn.reply(m.chat, '*[❗] 𝙴𝙻𝙰𝙱𝙾𝚁𝙰𝙽𝙳𝙾 𝚂𝚄 𝙳𝙸𝚂𝙴𝙽̃𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾...*', m)
-let res = `https://violetics.pw/api/ephoto360/1917?apikey=beta&text=${response[0]}`
+let res = `https://violetics.pw/api/ephoto360/1917?apikey=964f-0c75-7afc&text=${response[0]}`
 conn.sendFile(m.chat, res, 'error.jpg', null, m)}
 if (command == 'logochristmas') {
 conn.reply(m.chat, '*[❗] 𝙴𝙻𝙰𝙱𝙾𝚁𝙰𝙽𝙳𝙾 𝚂𝚄 𝙳𝙸𝚂𝙴𝙽̃𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾...*', m)
