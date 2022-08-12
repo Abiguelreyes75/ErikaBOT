@@ -19,7 +19,7 @@ let res = `https://violetics.pw/api/ephoto360/cute-typography?apikey=${Key360}&t
 conn.sendFile(m.chat, res, 'error.jpg', null, m)}
   if (command == 'monkey') {
 conn.reply(m.chat, '*[❗] 𝙴𝙻𝙰𝙱𝙾𝚁𝙰𝙽𝙳𝙾 𝚂𝚄 𝙳𝙸𝚂𝙴𝙽̃𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾...*', m)
-  conn.reply(m.chat, '*[❗] SI SU LOGO NO ES ENVIADO CORRECTAMENTE UTILICE MENOS PALABRAS.*', m)
+  conn.reply(m.chat, '*[❗] SI SU LOGO NO ES ENVIADO CORRECTAMENTE UTILICE EL COMANDO DE ESTA MANERA .TEXTO1|TEXTO2*', m)
 let res = `https://violetics.pw/api/ephoto360/monkey?apikey=${Key360}&text=${response[0]}&text2=${response[1]}`                                                                                                                // solo para probar si no funciona quitar 
 conn.sendFile(m.chat, res, 'error.jpg', null, m)} 
 if (command == 'girlgamer') {
