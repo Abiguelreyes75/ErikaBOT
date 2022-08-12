@@ -1,7 +1,8 @@
-import axios from 'axios'
+import uploadFile from '../lib/uploadFile.js'
+import uploadImage from '../lib/uploadImage.js'
 const fetch = require('node-fetch') 
-let handler = async (m, { conn, text, command }) => {
-    if (!text) throw 'Masukkan Teks.....................'
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+    if (!text) throw 'Ingrese texto.....................'
     let hyz = await fetch(`https://api.violetics.pw/api/ephoto360/${command}?apikey=zyykey&text=${text}`) 
     conn.sendButtonImg(m.chat, hyz, succes, wm3, 'Thanks', 'thanks', m) 
 }
