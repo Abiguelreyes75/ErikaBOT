@@ -8,8 +8,8 @@ let response = args.join(' ').split('|')
 if (!args[0]) throw '*[❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝚄𝙽 𝚃𝙴𝚇𝚃𝙾*'
 try {    
 if (command == '1917') {
- conn.reply(m.chat, '*[❗] no usar muchas palabras*', m)
 conn.reply(m.chat, '*[❗] 𝙴𝙻𝙰𝙱𝙾𝚁𝙰𝙽𝙳𝙾 𝚂𝚄 𝙳𝙸𝚂𝙴𝙽̃𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾...*', m)
+conn.reply(m.chat, '*[❗] SI SU LOGO NO ES ENVIADO. RECUERDE USAR MENOS TEXTO..*', m)
 let res = `https://violetics.pw/api/ephoto360/1917?apikey=${Key360}&text=${response[0]}`     //ya esta 
 conn.sendFile(m.chat, res, 'error.jpg', null, m)}
 if (command == 'cute') {
