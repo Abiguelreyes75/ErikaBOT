@@ -1,3 +1,4 @@
+import axios from 'axios'
 const fetch = require('node-fetch') 
 let handler = async (m, { conn, text, command }) => {
     if (!text) throw 'Masukkan Teks.....................'
