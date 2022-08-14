@@ -8,50 +8,50 @@ let response = args.join(' ').split('|')
 if (!args[0]) throw '*[❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝚄𝙽 𝚃𝙴𝚇𝚃𝙾*' 
 try {     
 if (command == '1917') {
-conn.reply(m.chat, '*[❗] 𝙴𝙻𝙰𝙱𝙾𝚁𝙰𝙽𝙳𝙾 𝚂𝚄 𝙳𝙸𝚂𝙴𝙽̃𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾...*', m)
-  conn.reply(m.chat, '*[❗] SI SU LOGO NO ES ENVIADO CORRECTAMENTE UTILICE MENOS PALABRAS.*', m)
+await conn.reply(m.chat, '*[❗] 𝙴𝙻𝙰𝙱𝙾𝚁𝙰𝙽𝙳𝙾 𝚂𝚄 𝙳𝙸𝚂𝙴𝙽̃𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾...*', m)
+await conn.reply(m.chat, '*[❗] SI SU LOGO NO ES ENVIADO CORRECTAMENTE UTILICE MENOS PALABRAS.*', m)
 let res = `https://violetics.pw/api/ephoto360/1917?apikey=${Key360}&text=${response[0]}`      
 conn.sendFile(m.chat, res, 'error.jpg', null, m)}
   
 if (command == 'cute') {
-conn.reply(m.chat, '*[❗] 𝙴𝙻𝙰𝙱𝙾𝚁𝙰𝙽𝙳𝙾 𝚂𝚄 𝙳𝙸𝚂𝙴𝙽̃𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾...*', m)
-  conn.reply(m.chat, '*[❗] SI SU LOGO NO ES ENVIADO CORRECTAMENTE UTILICE MENOS PALABRAS.*', m)
+await conn.reply(m.chat, '*[❗] 𝙴𝙻𝙰𝙱𝙾𝚁𝙰𝙽𝙳𝙾 𝚂𝚄 𝙳𝙸𝚂𝙴𝙽̃𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾...*', m)
+await conn.reply(m.chat, '*[❗] SI SU LOGO NO ES ENVIADO CORRECTAMENTE UTILICE MENOS PALABRAS.*', m)
 let res = `https://violetics.pw/api/ephoto360/cute-typography?apikey=${Key360}&text=${response[0]}`
 conn.sendFile(m.chat, res, 'error.jpg', null, m)}
   
-  if (command == 'modern_gold') {
-conn.reply(m.chat, '*[❗] 𝙴𝙻𝙰𝙱𝙾𝚁𝙰𝙽𝙳𝙾 𝚂𝚄 𝙳𝙸𝚂𝙴𝙽̃𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾...*', m)
-  conn.reply(m.chat, '*[❗] SI SU LOGO NO ES ENVIADO CORRECTAMENTE UTILICE MENOS PALABRAS.*', m)
+if (command == 'modern_gold') {
+await conn.reply(m.chat, '*[❗] 𝙴𝙻𝙰𝙱𝙾𝚁𝙰𝙽𝙳𝙾 𝚂𝚄 𝙳𝙸𝚂𝙴𝙽̃𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾...*', m)
+await conn.reply(m.chat, '*[❗] SI SU LOGO NO ES ENVIADO CORRECTAMENTE UTILICE MENOS PALABRAS.*', m)
 let res = `https://violetics.pw/api/ephoto360/modern-goldred2?apikey=${Key360}&text=${response[0]}`
 conn.sendFile(m.chat, res, 'error.jpg', null, m)}
   
-  if (command == 'clouds') {
-conn.reply(m.chat, '*[❗] 𝙴𝙻𝙰𝙱𝙾𝚁𝙰𝙽𝙳𝙾 𝚂𝚄 𝙳𝙸𝚂𝙴𝙽̃𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾...*', m)
-  conn.reply(m.chat, '*[❗] SI SU LOGO NO ES ENVIADO CORRECTAMENTE UTILICE MENOS PALABRAS.*', m)
+if (command == 'clouds') {
+await conn.reply(m.chat, '*[❗] 𝙴𝙻𝙰𝙱𝙾𝚁𝙰𝙽𝙳𝙾 𝚂𝚄 𝙳𝙸𝚂𝙴𝙽̃𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾...*', m)
+await conn.reply(m.chat, '*[❗] SI SU LOGO NO ES ENVIADO CORRECTAMENTE UTILICE MENOS PALABRAS.*', m)
 let res = `https://violetics.pw/api/ephoto360/clouds-sky?apikey=${Key360}&text=${response[0]}`
 conn.sendFile(m.chat, res, 'error.jpg', null, m)}
   
-  if (command == 'mylove') {
-conn.reply(m.chat, '*[❗] 𝙴𝙻𝙰𝙱𝙾𝚁𝙰𝙽𝙳𝙾 𝚂𝚄 𝙳𝙸𝚂𝙴𝙽̃𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾...*', m)
-  conn.reply(m.chat, '*[❗] SI SU LOGO NO ES ENVIADO CORRECTAMENTE UTILICE MENOS PALABRAS.*', m)
+if (command == 'mylove') {
+await conn.reply(m.chat, '*[❗] 𝙴𝙻𝙰𝙱𝙾𝚁𝙰𝙽𝙳𝙾 𝚂𝚄 𝙳𝙸𝚂𝙴𝙽̃𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾...*', m)
+await conn.reply(m.chat, '*[❗] SI SU LOGO NO ES ENVIADO CORRECTAMENTE UTILICE MENOS PALABRAS.*', m)
 let res = `https://violetics.pw/api/ephoto360/my-love?apikey=${Key360}&text=${response[0]}`
 conn.sendFile(m.chat, res, 'error.jpg', null, m)}
   
-  if (command == 'galaxy1') {
-conn.reply(m.chat, '*[❗] 𝙴𝙻𝙰𝙱𝙾𝚁𝙰𝙽𝙳𝙾 𝚂𝚄 𝙳𝙸𝚂𝙴𝙽̃𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾...*', m)
-  conn.reply(m.chat, '*[❗] SI SU LOGO NO ES ENVIADO CORRECTAMENTE UTILICE MENOS PALABRAS.*', m)
+if (command == 'galaxy1') {
+await conn.reply(m.chat, '*[❗] 𝙴𝙻𝙰𝙱𝙾𝚁𝙰𝙽𝙳𝙾 𝚂𝚄 𝙳𝙸𝚂𝙴𝙽̃𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾...*', m)
+await conn.reply(m.chat, '*[❗] SI SU LOGO NO ES ENVIADO CORRECTAMENTE UTILICE MENOS PALABRAS.*', m)
 let res = `https://violetics.pw/api/ephoto360/galaxy-effect?apikey=${Key360}&text=${response[0]}`
 conn.sendFile(m.chat, res, 'error.jpg', null, m)}
   
-  if (command == 'monkey') {
-conn.reply(m.chat, '*[❗] 𝙴𝙻𝙰𝙱𝙾𝚁𝙰𝙽𝙳𝙾 𝚂𝚄 𝙳𝙸𝚂𝙴𝙽̃𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾...*', m)
-  conn.reply(m.chat, '*[❗] SI SU LOGO NO ES ENVIADO CORRECTAMENTE UTILICE EL COMANDO DE ESTA MANERA .monkey texto1|texto2*', m)
+if (command == 'monkey') {
+await conn.reply(m.chat, '*[❗] 𝙴𝙻𝙰𝙱𝙾𝚁𝙰𝙽𝙳𝙾 𝚂𝚄 𝙳𝙸𝚂𝙴𝙽̃𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾...*', m)
+await conn.reply(m.chat, '*[❗] SI SU LOGO NO ES ENVIADO CORRECTAMENTE UTILICE EL COMANDO DE ESTA MANERA .monkey texto1|texto2*', m)
 let res = `https://violetics.pw/api/ephoto360/monkey?apikey=${Key360}&text=${response[0]}&text2=${response[1]}`                                                                                                                // solo para probar si no funciona quitar 
 conn.sendFile(m.chat, res, 'error.jpg', null, m)}
   
-   if (command == 'graffiti') {
-conn.reply(m.chat, '*[❗] 𝙴𝙻𝙰𝙱𝙾𝚁𝙰𝙽𝙳𝙾 𝚂𝚄 𝙳𝙸𝚂𝙴𝙽̃𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾...*', m)
-  conn.reply(m.chat, '*[❗] SI SU LOGO NO ES ENVIADO CORRECTAMENTE UTILICE EL COMANDO DE ESTA MANERA .graffiti texto1|texto2*', m)
+if (command == 'graffiti') {
+await conn.reply(m.chat, '*[❗] 𝙴𝙻𝙰𝙱𝙾𝚁𝙰𝙽𝙳𝙾 𝚂𝚄 𝙳𝙸𝚂𝙴𝙽̃𝙾, 𝙴𝚂𝙿𝙴𝚁𝙴 𝚄𝙽 𝙼𝙾𝙼𝙴𝙽𝚃𝙾...*', m)
+await conn.reply(m.chat, '*[❗] SI SU LOGO NO ES ENVIADO CORRECTAMENTE UTILICE EL COMANDO DE ESTA MANERA .graffiti texto1|texto2*', m)
 let res = `https://violetics.pw/api/ephoto360/cutegirl-graffiti?apikey=${Key360}&text=${response[0]}&text2=${response[1]}`                                                                                                                // solo para probar si no funciona quitar 
 conn.sendFile(m.chat, res, 'error.jpg', null, m)} 
   
