@@ -63,5 +63,5 @@ conn.sendFile(m.chat, res, 'error.jpg', null, m)}
 } catch {
 conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*', m)    
 }}
-handler.command = /^1917|girlgamer|cute|monkey|graffiti|galaxy1|mylove|clouds/i
+handler.command = /^1917|girlgamer|cute|monkey|graffiti|galaxy1|mylove|clouds|modern_gold/i
 export default handler
