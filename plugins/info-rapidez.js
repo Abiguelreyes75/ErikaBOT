@@ -23,6 +23,7 @@ const templateButtonsReplyMessage = [
 let tm = {
 text: veloz,
 footer: global.wm,
+ templateButtons: templateButtonsReplyMessage
 }
 conn.sendMessage(m.chat, tm, m)
 }
