@@ -95,8 +95,6 @@ _- Al hacer uso de ciertos comandos que tengan como objetivo socavar la incomodi
 *https://paypal.me/OficialGD*
 *~ Muchas Gracias Por tomarte el tiempo en informate sobre ErikaBot*
 `.trim()
-conn.sendHydrated(m.chat, Terminos,  `${wm}\nEstamos de acuerdo en Hacer Colaboraciones con Personas Comprometidas, manteniendo el Respeto Puedes Contactar si ese es el caso a esta Cuenta Oficial | https://www.instagram.com/abiguelreyes75/`,
-m,)
 }
 
 
