@@ -96,7 +96,8 @@ _- Al hacer uso de ciertos comandos que tengan como objetivo socavar la incomodi
 *~ Muchas Gracias Por tomarte el tiempo en informate sobre ErikaBot*
 `.trim()
 conn.sendHydrated(m.chat, Terminos,  `${wm}\nEstamos de acuerdo en Hacer Colaboraciones con Personas Comprometidas, manteniendo el Respeto Puedes Contactar si ese es el caso a esta Cuenta Oficial | https://www.instagram.com/abiguelreyes75/`, pp, 'no hay jaja', 'ERIKA-BOT', null, null, [
-
+], m,)
+}
 
 
 handler.customPrefix = /terminos|términos|términos, condiciones y privacidad|terminos, condiciones y privacidad|términos y condiciones y privacidad|terminosycondicionesyprivacidad|terminosycondiciones|terminos y condiciones y privacidad|terminos y condiciones|terminos y condiciones|terminos de uso|Terminos de uso|Terminó se uso|términos de uso|Términos de uso|Términos y condiciones/i
