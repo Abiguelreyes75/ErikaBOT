@@ -13,6 +13,41 @@ await m.reply(`╰⊱✅⊱ *𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊 | 𝙍𝙀𝙎
 let veloz = 
 `🚄 *VELOCIDAD:*\n *${speed}* *Milisegundos*\n\n🚄 *SPEED:*\n *${speed}* *Milliseconds*`
 
+let tm = {
+text: veloz,
+footer: global.wm,
+}
+conn.sendMessage(m.chat, tm, m)
+}
+m.reply(`${rg}*VELOCIDAD:* *${speed}* *Milisegundos*\n*SPEED:* *${speed}* *Milliseconds*`)
+
+import { xpRange } from '../lib/levelling.js'
+const { levelling } = '../lib/levelling.js'
+import moment from 'moment-timezone'
+let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
+//let userr = global.db.data.users[m.sender]
+//userr.registered = false
+let locale = 'es'
+let d = new Date(new Date + 3600000)
+let time = d.toLocaleTimeString(locale, {
+      hour: 'numeric',
+      minute: 'numeric',
+      second: 'numeric'
+    })
+//let _uptime = process.uptime() * 1000
+//let _muptime
+//if (process.send) {
+//process.send('uptime')
+//let uptime = clockString(_uptime)
+
+let _uptime = process.uptime() * 1000
+let uptime = clockString(_uptime) 
+
+wm = global.wm
+vs = global.vs
+let { exp, limit, level, role } = global.db.data.users[m.sender]
+let { min, xp, max } = xpRange(level, global.multiplier)
+//let name = await conn.getName(m.sender)
 const sections = [
 {
 title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀𝙎𝙋𝙇𝙀𝙂𝘼𝘽𝙇𝙀 | 𝘿𝙍𝙊𝙋-𝘿𝙊𝙒𝙉 𝙇𝙄𝙎𝙏`,
@@ -48,7 +83,7 @@ rows: [
       
 
 ]}, ]
-
+ 
 let name = await conn.getName(m.sender)
 //let name = conn.getName(m.sender)
 const listMessage = {
@@ -79,17 +114,60 @@ title: null,
 buttonText: "𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙈𝙀𝙉𝙐 : 𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐", 
 sections }
 
+let imagen = './media/menus/Menu3.jpg'
+let ftroli = { key: { fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "6289523258649-1604595598@g.us" }, "message": { orderMessage: { itemCount: 6546464643, status: 200, thumbnail: imagen, surface: 200, message: wm, orderTitle: wm, sellerJid: '0@s.whatsapp.net' }}, contextInfo: { "forwardingScore": 999, "isForwarded": true}, sendEphemeral: true}  
 
-let tm = {
-text: veloz,
-footer: global.wm,
+const fkontak = {
+	"key": {
+    "participants":"0@s.whatsapp.net",
+		"remoteJid": "status@broadcast",
+		"fromMe": false,
+		"id": "Halo"
+	},
+	"message": {
+		"contactMessage": {
+			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+		}
+	},
+	"participant": "0@s.whatsapp.net"
 }
-conn.sendMessage(m.chat, tm, m)
-}
-// let veloz = `${rg}*VELOCIDAD:* *${speed}* *Milisegundos*\n*SPEED:* *${speed}* *Milliseconds*`.trim() 
-//conn.sendButton(m.chat, `${rg}*VELOCIDAD:* *${speed}* *Milisegundos*\n*SPEED:* *${speed}* *Milliseconds*`, wm, veloz, [['Vista', /${command}]], m)
 
-//m.reply(`${rg}*VELOCIDAD:* *${speed}* *Milisegundos*\n*SPEED:* *${speed}* *Milliseconds*`) 
+await conn.sendMessage(m.chat, listMessage)
+//await conn.relayMessage(m.chat, { text: listMessage, mentions: [m.sender] }, { quoted: fkontak, m })
+//await conn.sendMessage(m.chat, { text: listMessage, mentions: [m.sender] }, { quoted: fkontak, m })
+}
+handler.help = ['en', 'dis'].map(v => v + 'able <option>')
+handler.tags = ['group', 'owner']
+handler.command = /^(menu|menú|memu|memú|help|info|comandos|2help|menu1.2|ayuda|commands|commandos|m|\?)$/i
+//handler.register = true
+handler.exp = 50
+export default handler
+
+function clockString(ms) {
+  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
+  let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+  let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+  return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
+}
+
+function ucapan() {
+  const time = moment.tz('America/Los_Angeles').format('HH')  //America/Los_Angeles  Asia/Jakarta   America/Toronto
+  let res = "👋 *BIENVENIDO(A) | WELCOME* 👋"
+  if (time >= 4) {
+    res = "🌇 *Buenos Días | Good Morning* ⛅"
+  }
+  if (time >= 11) {
+    res = "🏙️ *Buenas Tardes | Good Afternoon* 🌤️"
+  }
+  if (time >= 15) {
+    res = "🌆 *Buenas tardes | Good Afternoon* 🌥️"
+  }
+  if (time >= 17) {
+    res = "🌃 *Buenas noches | Good Evening* 💫"
+  }
+  return res
+} 
+
 
 handler.help = ['ping']
 handler.tags = ['info']
