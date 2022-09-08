@@ -93,8 +93,8 @@ _- Al hacer uso de ciertos comandos que tengan como objetivo socavar la incomodi
 *DONAR A LA CREADORA EN ESTA CUENTA OFICIAL*
 ~ _Si te Agrada y valoras el Trabajo que he realizado, puedes ayudarme en Donar para que pueda continuar en este Proyecto_
 *https://paypal.me/OficialGD*
-*~ Muchas Gracias Por tomarte el tiempo en informate sobre ErikaBot*`
-
+*~ Muchas Gracias Por tomarte el tiempo en informate sobre ErikaBot*
+`.trim()
 
 handler.customPrefix = /terminos|términos|términos, condiciones y privacidad|terminos, condiciones y privacidad|términos y condiciones y privacidad|terminosycondicionesyprivacidad|terminosycondiciones|terminos y condiciones y privacidad|terminos y condiciones|terminos y condiciones|terminos de uso|Terminos de uso|Terminó se uso|términos de uso|Términos de uso|Términos y condiciones/i
 handler.command = new RegExp
