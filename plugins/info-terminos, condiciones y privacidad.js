@@ -98,9 +98,7 @@ _- Al hacer uso de ciertos comandos que tengan como objetivo socavar la incomodi
 *https://paypal.me/OficialGD*
 *~ Muchas Gracias Por tomarte el tiempo en informate sobre GataBot*
 `.trim()
-conn.sendHydrated(m.chat, Terminos,  `${wm}\nEstamos de acuerdo en Hacer Colaboraciones con Personas Comprometidas, manteniendo el Respeto Puedes Contactar si ese es el caso a esta Cuenta Oficial | https://www.instagram.com/gata_dios` 
-
-}
+conn.sendHydrated(m.chat, Terminos)
 
 handler.customPrefix = /terminos|términos|términos, condiciones y privacidad|terminos, condiciones y privacidad|términos y condiciones y privacidad|terminosycondicionesyprivacidad|terminosycondiciones|terminos y condiciones y privacidad|terminos y condiciones|terminos y condiciones|terminos de uso|Terminos de uso|Terminó se uso|términos de uso|Términos de uso|Términos y condiciones/i
 handler.command = new RegExp
@@ -108,10 +106,3 @@ handler.command = new RegExp
 handler.exp = 70
 export default handler
 
-const more = String.fromCharCode(8206)
-const readMore = more.repeat(4001)
-function clockString(ms) {
-let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
-let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
-let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}
