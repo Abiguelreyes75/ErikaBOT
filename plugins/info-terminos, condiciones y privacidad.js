@@ -95,7 +95,7 @@ _- Al hacer uso de ciertos comandos que tengan como objetivo socavar la incomodi
 await conn.sendMessage(m.chat, listMessage)
 }
 
-handler.custmoPrefix = /terminos|Terminos|condiciones|privacidad/i
+handler.customPrefix = /terminos|Terminos|condiciones|privacidad/i
 handler.command = new RegExp
 handler.exp = 50
 export default handler
