@@ -4,11 +4,6 @@ import { promises } from 'fs'
 import { join } from 'path'
 let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
   
-  
-const { levelling } = '../lib/levelling.js'
-//let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text }) => {
-
-
 let termino = `
 *_Toda la información que se mencione aquí no excluye a la Propietaria del Bot, y Propietarios Acredores al uso de GataBot-MD_*
 *_No Somos responsables del desconocimiento que tenga por parte de esta información._* 
