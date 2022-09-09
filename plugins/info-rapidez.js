@@ -9,7 +9,6 @@ await m.reply('🚀')
 await m.reply('🚀🚀')
 await m.reply('🚀🚀🚀')
 await m.reply(`╰⊱✅⊱ *𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊 | 𝙍𝙀𝙎𝙐𝙇𝙏* ⊱✅⊱╮`)
-await conn.sendButton(m.chat, `🥵 ♥ vagina ♥  🥵`, [['🔄 𝐬𝐢𝐠𝐮𝐢𝐞𝐧𝐭𝐞 🔄', `/${command}`]], m)
  
 let veloz = 
 `🚄 *VELOCIDAD:*\n *${speed}* *Milisegundos*\n\n🚄 *SPEED:*\n *${speed}* *Milliseconds*`
