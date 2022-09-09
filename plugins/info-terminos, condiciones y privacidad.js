@@ -56,8 +56,8 @@ let name = await conn.getName(m.sender)
 //let name = conn.getName(m.sender)
 const listMessage = {
 text: `─────────────────────❀\n│${ucapan()}\n│💖•.¸💝¸.• *${name}* •.¸💝¸.•💖\n─────────────────────❀
-                                            〔 *${wm}* 〕
-   *_Toda la información que se mencione aquí no excluye a la Propietaria del Bot, y Propietarios Acredores al uso de GataBot-MD_*
+                                                           〔 *${wm}* 〕
+*_Toda la información que se mencione aquí no excluye a la Propietaria del Bot, y Propietarios Acredores al uso de GataBot-MD_*
 *_No Somos responsables del desconocimiento que tenga por parte de esta información._* 
 *TÉRMINOS DE PRIVACIDAD*
 _- Somos consciente del constante uso que le pueda dar al Bot, y también Garantizamos que la información como (imágenes, vídeos, enlaces, ubicación, Audios, Stickers, Gif, Contactos que Usted Proporcione en torno a Número(s) Oficial(es) No son ni serán Compartido Con Nadie, ni se usaran dicho Datos fuera del entorno del BOT._
@@ -94,9 +94,9 @@ _- Al hacer uso de ciertos comandos que tengan como objetivo socavar la incomodi
 
 await conn.sendMessage(m.chat, listMessage)
 }
-handler.help = ['en', 'dis'].map(v => v + 'able <option>')
-handler.tags = ['group', 'owner']
-handler.command = /^(terminos)$/i
+
+handler.custmoPrefix = /terminos|Terminos|condiciones|privacidad/i
+handler.command = new RegExp
 handler.exp = 50
 export default handler
 
