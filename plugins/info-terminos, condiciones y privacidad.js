@@ -95,7 +95,7 @@ await conn.sendMessage(m.chat, listMessage)
 }
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = /^(terminos\?)$/i
+handler.command = /^(terminos)$/i
 handler.exp = 50
 export default handler
 
