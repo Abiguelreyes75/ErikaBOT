@@ -55,8 +55,8 @@ rows: [
 let name = await conn.getName(m.sender)
 //let name = conn.getName(m.sender)
 const listMessage = {
-text: `─────────────────────❀\n│${ucapan()}\n│💖•.¸💝¸.• *${name}* •.¸💝¸.•💖\n─────────────────────❀
-                                                   〔 *${wm}* 〕
+text: `╭─────────────────────❀\n│${ucapan()}\n│💖•.¸💝¸.• *${name}* •.¸💝¸.•💖\n╰─────────────────────❀
+╭━━━〔 *${wm}* 〕━━━⬣
 *_Toda la información que se mencione aquí no excluye a la Propietaria del Bot, y Propietarios Acredores al uso de GataBot-MD_*
 *_No Somos responsables del desconocimiento que tenga por parte de esta información._* 
 *TÉRMINOS DE PRIVACIDAD*
@@ -85,19 +85,18 @@ _- Al hacer uso de ciertos comandos que tengan como objetivo socavar la incomodi
 *DONAR A LA CREADORA EN ESTA CUENTA OFICIAL*
 ~ _Si te Agrada y valoras el Trabajo que he realizado, puedes ayudarme en Donar para que pueda continuar en este Proyecto_
 *https://paypal.me/OficialGD*
-*~ Muchas Gracias Por tomarte el tiempo en informate sobre GataBot*                                                
-
-`, footer: `${wm}`, //${name} ${ucapan()}     
- title: null,
- buttonText: "𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙈𝙀𝙉𝙐 | 𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐", 
- sections }
+*~ Muchas Gracias Por tomarte el tiempo en informate sobre GataBot*
+╰━━━━━━━━━━━━━━━━━━━━━⬣`, footer: `${wm}`, //${name} ${ucapan()}
+title: null,
+buttonText: "𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙈𝙀𝙉𝙐 | 𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐", 
+sections }
 
 await conn.sendMessage(m.chat, listMessage)
 }
-
-
-handler.command = /^(terminos|Terminos)/
-handler.exp = 70
+handler.help = ['en', 'dis'].map(v => v + 'able <option>')
+handler.tags = ['group', 'owner']
+handler.command = /^(menucompleto)$/i
+handler.exp = 50
 export default handler
 
 function clockString(ms) {
