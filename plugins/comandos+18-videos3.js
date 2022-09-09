@@ -1,7 +1,10 @@
-let handler  = async (m, { conn, usedPrefix, command }) => {
-if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `${ag}𝙇𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 +18 𝙀𝙎𝙏𝘼𝙉 𝘿𝙀𝙎𝘼𝘾𝙏𝙄𝙑𝘼𝘿𝙊𝙎 𝙐𝙎𝙀 #𝙤𝙣 𝙢𝙤𝙙𝙤𝙝𝙤𝙧𝙣𝙮 𝙋𝘼𝙍𝘼 𝘼𝘾𝙏𝙄𝙑𝘼𝙍\n\n+18 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 𝘼𝙍𝙀 𝘿𝙄𝙎𝘼𝘽𝙇𝙀𝘿 𝙐𝙎𝙀 #𝙤𝙣 𝙢𝙤𝙙𝙤𝙝𝙤𝙧𝙣𝙮 𝙏𝙊 𝙀𝙉𝘼𝘽𝙇𝙀`   
-let res = pickRandom(asupan)
-conn.sendHydrated(m.chat, null, null, res, 'LOS AMO', 'ERIKA-BOT', null, null, [['🥵 𝙎𝙄𝙂𝙐𝙄𝙀𝙉𝙏𝙀 | 𝙉𝙀𝙓𝙏', `/${command}`]], m)}
+import fetch from 'node-fetch'
+let handler = async (m, {conn, command }) => {
+if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '[ ⚠️ ] Los comandos +18 estan desactivados en este grupo, si es administrador de este grupo y desea activarlos escriba #enable nsfw'
+let url = lesbi[Math.floor(Math.random() * lesbi.length)]
+conn.sendButton(m.chat, `🥵 ♥ lesbianas ♥  🥵`, author, url, [['🔄 𝐬𝐢𝐠𝐮𝐢𝐞𝐧𝐭𝐞 🔄', `/${command}`]], m)
+}
+  
 handler.help = ['videoxxx']
 handler.tags = ['random']
 handler.command = /^(pornolesbivid|pornolesbianavid|pornolesbiv|pornolesbianav|Pornolesbivid|Pornolesbianavid|pornolesv|Pornolesv)$/i
@@ -9,10 +12,8 @@ handler.level = 5
 handler.limit = 4
 export default handler
 
-function pickRandom(list) {
-return list[Math.floor(list.length * Math.random())]}
 
-const asupan = [
+const lesbi = [
 "https://l.top4top.io/m_2257y4pyl0.mp4",
 "https://c.top4top.io/m_2274woesg0.mp4",
 "https://k.top4top.io/m_2257pdwjy0.mp4",
