@@ -95,10 +95,8 @@ _- Al hacer uso de ciertos comandos que tengan como objetivo socavar la incomodi
 await conn.sendMessage(m.chat, listMessage)
 }
 
-handler.help = ['infomenu'].map(v => v + 'able <option>')
-handler.tags = ['group', 'owner']
-handler.command = /^(terminos)i
-//handler.register = true
+
+handler.command = /^(terminos|Terminos)/
 handler.exp = 70
 export default handler
 
