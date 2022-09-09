@@ -56,7 +56,7 @@ let name = await conn.getName(m.sender)
 //let name = conn.getName(m.sender)
 const listMessage = {
 text: `─────────────────────❀\n│${ucapan()}\n│💖•.¸💝¸.• *${name}* •.¸💝¸.•💖\n─────────────────────❀
-                                                           〔 *${wm}* 〕
+                                                   〔 *${wm}* 〕
 *_Toda la información que se mencione aquí no excluye a la Propietaria del Bot, y Propietarios Acredores al uso de GataBot-MD_*
 *_No Somos responsables del desconocimiento que tenga por parte de esta información._* 
 *TÉRMINOS DE PRIVACIDAD*
