@@ -17,6 +17,7 @@ text: veloz,
 footer: global.wm,
 }
 conn.sendMessage(m.chat, tm, m)
+conn.sendButton(m.chat, `🥵 ♥ vagina ♥  🥵`, author, url, [['🔄 𝐬𝐢𝐠𝐮𝐢𝐞𝐧𝐭𝐞 🔄', `/${command}`]], m)
 }
 
 handler.help = ['ping']
