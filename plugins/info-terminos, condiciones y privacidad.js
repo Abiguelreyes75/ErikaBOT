@@ -67,7 +67,7 @@ let username = conn.getName(who)
 //let user = global.db.data.users[m.sender]
 //user.registered = false
 
-let Terminos = `
+let termino = `
 *_Toda la información que se mencione aquí no excluye a la Propietaria del Bot, y Propietarios Acredores al uso de GataBot-MD_*
 *_No Somos responsables del desconocimiento que tenga por parte de esta información._* 
 *TÉRMINOS DE PRIVACIDAD*
@@ -99,7 +99,7 @@ _- Al hacer uso de ciertos comandos que tengan como objetivo socavar la incomodi
 *~ Muchas Gracias Por tomarte el tiempo en informate sobre GataBot*
 `.trim()
 
-conn.sendHydrated(m.chat, Terminos, null, null, null, null, null, null, [
+conn.sendHydrated(m.chat, termino, null, null, null, null, null, null, [
 [null, null]], m)}
 
 handler.customPrefix = /terminos|términos|términos, condiciones y privacidad|terminos, condiciones y privacidad|términos y condiciones y privacidad|terminosycondicionesyprivacidad|terminosycondiciones|terminos y condiciones y privacidad|terminos y condiciones|terminos y condiciones|terminos de uso|Terminos de uso|Terminó se uso|términos de uso|Términos de uso|Términos y condiciones/i
