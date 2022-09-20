@@ -41,14 +41,27 @@ Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length} Usuarios*
 ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${money} GataCoins*`).join`\n`}
 `.trim()
   
-  let buttonMessage={
-'mediaType': 2,    
-'caption': text,   
+let buttonMessage= {
+'document': { url: `https://paypal.me/OficialGD` },
+'fileName': `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
+'fileLength': 99999999999999,
+'pageCount': 200,
+'contextInfo': {
+'forwardingScore': 200,
+'isForwarded': true,
+'externalAdReply': {
+'mediaUrl': 'https://paypal.me/OficialGD',
+'mediaType': 2,
+'previewType': 'pdf',
+'title': 'ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩',
+'thumbnail': imagen1,
+'sourceUrl': 'https://paypal.me/OficialGD' }},
+'caption': text,
 'buttons':[
 {buttonId: `${usedPrefix}menucompleto`, buttonText: {displayText: '💖𝙼𝙴𝙽𝚄💖'}, type: 1}, 
 {buttonId: `${usedPrefix}ping`, buttonText: {displayText: '👑Spedtest👑'}, type: 1}],
 'headerType': 6 }
-conn.sendMessage(m.chat, buttonMessage, { quoted: m }) 
+conn.sendMessage(m.chat, buttonMessage, { quoted: m })
   
 }
 handler.help = ['top']
