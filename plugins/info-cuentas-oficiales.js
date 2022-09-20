@@ -1,5 +1,6 @@
 let media = './media/menus/Menuvid2.mp4'
-let handler = async (m, { conn, command }) => {
+let handler = async (m, { conn, usedPrefix }) => {
+//let handler = async (m, { conn, command }) => {
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]
 let str = `
