@@ -54,7 +54,6 @@ let buttonMessage= {
 'externalAdReply': {
 'mediaUrl': 'https://github.com/BrunoSobrino/TheMystic-Bot-MD',
 'mediaType': 2,
-'previewType': 'null',
 'title': 'ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩',
 'body': wm,
 'thumbnail': imagen1,
