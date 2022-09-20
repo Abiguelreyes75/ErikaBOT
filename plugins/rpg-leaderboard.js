@@ -42,7 +42,8 @@ ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants
 `.trim()
   
   let buttonMessage={
-'mediaType': 2,   
+'mediaType': 2,    
+'caption': text,   
 'buttons':[
 {buttonId: `${usedPrefix}menucompleto`, buttonText: {displayText: '💖𝙼𝙴𝙽𝚄💖'}, type: 1}, 
 {buttonId: `${usedPrefix}ping`, buttonText: {displayText: '👑Spedtest👑'}, type: 1}],
