@@ -55,9 +55,9 @@ let buttonMessage= {
 'caption': estado,
 'footer': wm,
 'buttons':[
-{buttonId: `${usedPrefix}menu`, buttonText: {displayText: '𝙼𝙴𝙽𝚄'}, type: 1},
-{buttonId: `${usedPrefix}hornymenu`, buttonText: {displayText: 'MENUXXX'}, type: 1},
-{buttonId: `${usedPrefix}donar`, buttonText: {displayText: '𝙳𝙾𝙽𝙰𝚁'}, type: 1}],
+{buttonId: `${usedPrefix}menu`, buttonText: {displayText: 'ᴍᴇɴᴜ'}, type: 1},
+{buttonId: `${usedPrefix}hornymenu`, buttonText: {displayText: 'ᴍᴇɴᴜxxx'}, type: 1},
+{buttonId: `${usedPrefix}donar`, buttonText: {displayText: 'ᴅᴏɴᴀʀ'}, type: 1}],
 'headerType': 6 }
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 
