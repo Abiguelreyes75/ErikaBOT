@@ -44,8 +44,9 @@ ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants
 let buttonMessage= {
 'caption': text,
 'buttons':[
-{buttonId: `${usedPrefix}menucompleto`, buttonText: {displayText: '💖𝙼𝙴𝙽𝚄💖'},},
-{buttonId: `${usedPrefix}ping`, buttonText: {displayText: '👑Spedtest👑'},}],
+{buttonId: `${usedPrefix}menucompleto`, buttonText: {displayText: '💖𝙼𝙴𝙽𝚄💖'}
+
+                                                    }
 }
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })
   
