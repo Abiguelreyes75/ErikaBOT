@@ -1,4 +1,6 @@
 let handler = async (m, { conn, args, participants, usedPrefix }) => {
+var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
+var document = doc[Math.floor(Math.random() * doc.length)]
   //let user = global.db.data.users[m.sender]
    //user.registered = false
   let users = Object.entries(global.db.data.users).map(([key, value]) => {
@@ -40,9 +42,9 @@ ${sortedRole.slice(0, len).map(({ jid, role }, i) => `${i + 1}. ${participants.s
 Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length} Usuarios*
 ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${money} GataCoins*`).join`\n`}
 `.trim()
-  
 let buttonMessage= {
 'document': { url: `https://paypal.me/OficialGD` },
+'mimetype': `application/${document}`,
 'fileName': `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
 'fileLength': 99999999999999,
 'pageCount': 200,
@@ -54,9 +56,11 @@ let buttonMessage= {
 'mediaType': 2,
 'previewType': 'pdf',
 'title': 'ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩',
+'body': wm,
 'thumbnail': imagen1,
 'sourceUrl': 'https://paypal.me/OficialGD' }},
 'caption': text,
+'footer': wm,
 'buttons':[
 {buttonId: `${usedPrefix}menucompleto`, buttonText: {displayText: '💖𝙼𝙴𝙽𝚄💖'}, type: 1}, 
 {buttonId: `${usedPrefix}ping`, buttonText: {displayText: '👑Spedtest👑'}, type: 1}],
