@@ -41,26 +41,30 @@ Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length} Usuarios*
 ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${money} GataCoins*`).join`\n`}
 `.trim()
   
-  /*await conn.reply(m.chat, text, m, { 
-    contextInfo: {
-      mentionedJid: [...usersExp.slice(0, len), ...usersLim.slice(0, len), ...usersLevel.slice(0, len), ...usersRole.slice(0, len), ...usersMoney.slice(0, len)].filter(v => !participants.some(p => v === p.jid))
-    }
-  }) */
-
-/*await conn.sendHydrated(m.chat, wm, `𝘼𝙘𝙩𝙪𝙖𝙡𝙞𝙯𝙖 𝙩𝙪𝙨 𝘿𝙖𝙩𝙤𝙨 𝙚𝙣 𝙚𝙡 𝙏𝙤𝙥 | 𝙍𝙖𝙣𝙠𝙞𝙣𝙜 𝙘𝙤𝙣 𝙚𝙡 𝙘𝙤𝙢𝙖𝙣𝙙𝙤:\n${usedPrefix}nivel\n${usedPrefix}exp `, null, md, 'Erika-BOT', null, null, [
-
-['𝙈𝙚𝙣𝙪 𝙅𝙪𝙚𝙜𝙤𝙨 | 𝙂𝙖𝙢𝙚𝙨 𝙈𝙚𝙣𝙪 🎡', '#juegosmenu'],
-['𝙍𝙖𝙣𝙜𝙤𝙨 | 𝙍𝙤𝙡 🚹', '#rol'],
-['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `${usedPrefix}menu`]
-], m,)  */
- let buttonMessage = { 
+ let buttonMessage= {
+'document': { url: `https://paypal.me/OficialGD` },
+'mimetype': `application/${document}`,
+'fileName': `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
+'fileLength': 99999999999999,
+'pageCount': 200,
+'contextInfo': {
+'forwardingScore': 200,
+'isForwarded': true,
+'externalAdReply': {
+'mediaUrl': 'https://paypal.me/OficialGD',
+'mediaType': 2,
+'previewType': 'pdf',
+'title': 'ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩',
+'body': wm,
+'thumbnail': imagen1,
+'sourceUrl': 'https://paypal.me/OficialGD' }},
+'caption': text,
+'footer': wm,
 'buttons':[
 {buttonId: `${usedPrefix}menucompleto`, buttonText: {displayText: '💖𝙼𝙴𝙽𝚄💖'}, type: 1}, 
 {buttonId: `${usedPrefix}ping`, buttonText: {displayText: '👑Spedtest👑'}, type: 1}],
 'headerType': 6 }
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })
-  
-  
 }
 handler.help = ['top']
 handler.tags = ['xp']
@@ -71,18 +75,3 @@ handler.exp = 0
 
 export default handler
 
-function sort(property, ascending = true) {
-  if (property) return (...args) => args[ascending & 1][property] - args[!ascending & 1][property]
-  else return (...args) => args[ascending & 1] - args[!ascending & 1]
-}
-
-function toNumber(property, _default = 0) {
-  if (property) return (a, i, b) => {
-    return {...b[i], [property]: a[property] === undefined ? _default : a[property]}
-  }
-  else return a => a === undefined ? _default : a
-}
-
-function enumGetKey(a) {
-  return a.jid
-}
