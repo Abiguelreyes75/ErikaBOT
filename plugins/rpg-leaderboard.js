@@ -45,11 +45,20 @@ ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants
       mentionedJid: [...usersExp.slice(0, len), ...usersLim.slice(0, len), ...usersLevel.slice(0, len), ...usersRole.slice(0, len), ...usersMoney.slice(0, len)].filter(v => !participants.some(p => v === p.jid))
     }
   })
-await conn.sendHydrated(m.chat, wm, `𝘼𝙘𝙩𝙪𝙖𝙡𝙞𝙯𝙖 𝙩𝙪𝙨 𝘿𝙖𝙩𝙤𝙨 𝙚𝙣 𝙚𝙡 𝙏𝙤𝙥 | 𝙍𝙖𝙣𝙠𝙞𝙣𝙜 𝙘𝙤𝙣 𝙚𝙡 𝙘𝙤𝙢𝙖𝙣𝙙𝙤:\n${usedPrefix}nivel\n${usedPrefix}exp `, null, md, 'Erika-BOT', null, null, [
+
+/*await conn.sendHydrated(m.chat, wm, `𝘼𝙘𝙩𝙪𝙖𝙡𝙞𝙯𝙖 𝙩𝙪𝙨 𝘿𝙖𝙩𝙤𝙨 𝙚𝙣 𝙚𝙡 𝙏𝙤𝙥 | 𝙍𝙖𝙣𝙠𝙞𝙣𝙜 𝙘𝙤𝙣 𝙚𝙡 𝙘𝙤𝙢𝙖𝙣𝙙𝙤:\n${usedPrefix}nivel\n${usedPrefix}exp `, null, md, 'Erika-BOT', null, null, [
+
 ['𝙈𝙚𝙣𝙪 𝙅𝙪𝙚𝙜𝙤𝙨 | 𝙂𝙖𝙢𝙚𝙨 𝙈𝙚𝙣𝙪 🎡', '#juegosmenu'],
 ['𝙍𝙖𝙣𝙜𝙤𝙨 | 𝙍𝙤𝙡 🚹', '#rol'],
 ['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `${usedPrefix}menu`]
-], m,)  
+], m,)  */
+ let buttonMessage = { 
+'buttons':[
+{buttonId: `${usedPrefix}menucompleto`, buttonText: {displayText: '💖𝙼𝙴𝙽𝚄💖'}, type: 1}, 
+{buttonId: `${usedPrefix}ping`, buttonText: {displayText: '👑Spedtest👑'}, type: 1}],
+'headerType': 6 }
+conn.sendMessage(m.chat, buttonMessage, { quoted: m })
+  
   
 }
 handler.help = ['top']
