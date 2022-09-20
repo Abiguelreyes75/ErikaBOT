@@ -3,7 +3,8 @@ import PhoneNumber from 'awesome-phonenumber'
 import { promises } from 'fs'
 import { join } from 'path'
 let handler = async (m, { conn, usedPrefix, command, args, usedPrefix: _p, __dirname, isOwner, text, isAdmin, isROwner }) => {
-  
+var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
+var document = doc[Math.floor(Math.random() * doc.length)] 
   
 const { levelling } = '../lib/levelling.js'
 //let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text }) => {
@@ -112,11 +113,38 @@ let menu = `
 ┃🎡➺ _${usedPrefix}multijuegos_
 ┃🎡➺ _${usedPrefix}juegos_
 ╰━━━━━━━━━━━━━━━━━━━⬣`.trim()
-conn.sendHydrated(m.chat, menu, wm, pp, 'LOS AMO', 'ERIKA-BOT', null, null, [
+let buttonMessage= {
+'document': { url: `https://github.com/BrunoSobrino/TheMystic-Bot-MD` },
+'mimetype': `application/${document}`,
+'fileName': `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
+'fileLength': 99999999999999,
+'pageCount': 200,
+'contextInfo': {
+'forwardingScore': 200,
+'isForwarded': true,
+'externalAdReply': {
+'mediaUrl': 'https://github.com/BrunoSobrino/TheMystic-Bot-MD',
+'mediaType': 2,
+'previewType': 'pdf',
+'title': 'ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩',
+'body': wm,
+'thumbnail': imagen1,
+'sourceUrl': 'https://www.youtube.com/channel/UCSTDMKjbm-EmEovkygX-lCA' }},
+'caption': menu,
+'footer': wm,
+'buttons':[
+{buttonId: `${usedPrefix}menu`, buttonText: {displayText: '𝙼𝙴𝙽𝚄'}, type: 1}, 
+{buttonId: `${usedPrefix}donar`, buttonText: {displayText: '𝙳𝙾𝙽𝙰𝚁'}, type: 1}],
+'headerType': 6 }
+conn.sendMessage(m.chat, buttonMessage, { quoted: m })
+
+
+
+/*conn.sendHydrated(m.chat, menu, wm, pp, 'LOS AMO', 'ERIKA-BOT', null, null, [
 ['𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪 💫', '.allmenu'],
 ['𝙈𝙚𝙣𝙪 𝙙𝙚𝙨𝙥𝙡𝙚𝙜𝙖𝙗𝙡𝙚 | 𝙈𝙚𝙣𝙪 𝙇𝙞𝙨𝙩 🌟', '/menulista'],
 ['𝙈𝙚𝙣𝙪 𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 | 𝙈𝙖𝙞𝙣 𝙢𝙚𝙣𝙪 ⚡', '#menu']
-], m,)
+], m,) */
 
 }
 
