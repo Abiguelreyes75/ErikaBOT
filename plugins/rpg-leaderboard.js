@@ -42,8 +42,6 @@ ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants
 `.trim()
   
 let buttonMessage= {
-'document': { url: `https://paypal.me/OficialGD` },
-'fileName': `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
 'fileLength': 99999999999999,
 'pageCount': 200,
 'contextInfo': {
