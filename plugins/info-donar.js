@@ -43,7 +43,7 @@ let buttonMessage= {
 'caption': text,
 'footer': wm,
 'buttons':[
-{buttonId: `${usedPrefix}menu`, buttonText: {displayText: '𝙼𝙴𝙽𝚄'}, type: 1}, 
+{buttonId: `${usedPrefix}menucompleto`, buttonText: {displayText: '𝙼𝙴𝙽𝚄'}, type: 1}, 
 {buttonId: `${usedPrefix}donar`, buttonText: {displayText: '𝙳𝙾𝙽𝙰𝚁'}, type: 1}],
 'headerType': 6 }
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -54,5 +54,5 @@ await conn.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
 }
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
-handler.command = /^(owner|creator|creador|propietario)$/i
+handler.command = /^(donar)$/i
 export default handler
