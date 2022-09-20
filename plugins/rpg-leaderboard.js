@@ -41,12 +41,14 @@ Tú : *${usersMoney.indexOf(m.sender) + 1}* de *${usersMoney.length} Usuarios*
 ${sortedMoney.slice(0, len).map(({ jid, money }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${money} GataCoins*`).join`\n`}
 `.trim()
   
- let buttonMessage= {
+  let buttonMessage={
+    
 'buttons':[
-{buttonId: `${usedPrefix}menucompleto`, buttonText: {displayText: '💖𝙼𝙴𝙽𝚄💖'}, type: 1}, 
-{buttonId: `${usedPrefix}ping`, buttonText: {displayText: '👑Spedtest👑'}, type: 1}],
+{buttonId: `${usedPrefix}menucompleto`, buttonText: {displayText: '💖𝙼𝙴𝙽𝚄💖'}, null: 1}, 
+{buttonId: `${usedPrefix}ping`, buttonText: {displayText: '👑Spedtest👑'}, null: 1}],
 'headerType': 6 }
-conn.sendMessage(m.chat, buttonMessage, { quoted: m })
+conn.sendMessage(m.chat, buttonMessage, { quoted: m }) 
+  
 }
 handler.help = ['top']
 handler.tags = ['xp']
@@ -57,3 +59,18 @@ handler.exp = 0
 
 export default handler
 
+function sort(property, ascending = true) {
+  if (property) return (...args) => args[ascending & 1][property] - args[!ascending & 1][property]
+  else return (...args) => args[ascending & 1] - args[!ascending & 1]
+}
+
+function toNumber(property, _default = 0) {
+  if (property) return (a, i, b) => {
+    return {...b[i], [property]: a[property] === undefined ? _default : a[property]}
+  }
+  else return a => a === undefined ? _default : a
+}
+
+function enumGetKey(a) {
+  return a.jid
+}
