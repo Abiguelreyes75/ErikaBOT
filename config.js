@@ -73,7 +73,7 @@ global.packname = '🐈 𝓔𝓻𝓲𝓴𝓪𝓑𝓞𝓣'
 global.author = '𝓔𝓻𝓲𝓴𝓪𝓑𝓞𝓣'
 
 //━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
-
+global.imagen1 = fs.readFileSync('./media/menus/Menu1.jpg')
 
 
 //xxx keys
