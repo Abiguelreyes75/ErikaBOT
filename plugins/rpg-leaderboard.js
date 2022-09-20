@@ -62,8 +62,8 @@ let buttonMessage= {
 'caption': text,
 'footer': wm,
 'buttons':[
-{buttonId: `${usedPrefix}menucompleto`, buttonText: {displayText: '💖𝙼𝙴𝙽𝚄💖'}, type: 1}, 
-{buttonId: `${usedPrefix}ping`, buttonText: {displayText: '👑Spedtest👑'}, type: 1}],
+{buttonId: `${usedPrefix}menucompleto`, buttonText: {displayText: '💖𝙼𝙴𝙽𝚄💖'}, type: null}, 
+{buttonId: `${usedPrefix}ping`, buttonText: {displayText: '👑Spedtest👑'}, type: null}],
 'headerType': 6 }
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })
   
