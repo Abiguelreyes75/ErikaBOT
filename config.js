@@ -170,4 +170,11 @@ watchFile(file, () => {
   unwatchFile(file)
   console.log(chalk.redBright("Update 'config.js'"))
   import(`${file}?update=${Date.now()}`)
+ 
+ //rpg 
+ 
+ global.comienzo = '• • ◕◕════'
+ globsl.fin = '════◕◕ • •'
+  
+ 
 })
