@@ -25,9 +25,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ✦ 𝙐𝙍𝙇
 ✦ ${url}
-*𓆩 𓃠 𓆪 ✧═══ ${vs} ═══✧ 𓆩 𓃠 𓆪*`, [['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, )
-    
-    
+╰━━━━━━━❰ *${vs}* ❱━━━━━━⬣`.trim(), wm, thumbnail, '', '', null, null, [
     ['𝙑𝙞𝙙𝙚𝙤 | ✿', `${usedPrefix}ytv ${url} yes`],
     ['𝘼𝙪𝙙𝙞𝙤 | ✿', `${usedPrefix}yta ${url} yes`]
   ], m)
@@ -40,5 +38,4 @@ handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
 handler.tags = ['downloader']
 handler.command = /^play2?$/i
 handler.exp = 20
-export default handler 
-
+export default handler
