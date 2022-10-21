@@ -157,7 +157,7 @@ rows: [
       {title: "⚙️ 𝘾𝙀𝙉𝙏𝙍𝙊 𝘿𝙀 𝘾𝙊𝙉𝙁𝙄𝙂𝙐𝙍𝘼𝘾𝙄𝙊𝙉 ⚙️", description: null, rowId: `${usedPrefix}on`},
       {title: "🎈 𝙈𝙀𝙉𝙐 𝙎𝙏𝙄𝘾𝙆𝙀𝙍 𝙔 𝙁𝙄𝙇𝙏𝙍𝙊𝙎 🎈", description: null, rowId: `${usedPrefix}stickermenu`,description: '\n'}
       ]},{
-title:  comeinzo + ` 𝐃𝐈𝐕𝐄𝐑𝐒𝐈𝐎𝐍 | 𝐅𝐔𝐍 ` + fin ,
+title:  comienzo + ` 𝐃𝐈𝐕𝐄𝐑𝐒𝐈𝐎𝐍 | 𝐅𝐔𝐍 ` + fin ,
 rows: [
       {title: "✨ 𝙈𝙀𝙉𝙐 𝙀𝙁𝙀𝘾𝙏𝙊𝙎 𝙔 𝙇𝙊𝙂𝙊𝙎 ✨", description: null, rowId: `${usedPrefix}makermenu`},
       {title: "🪄 𝙈𝙀𝙉𝙐 𝘿𝙀 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙎 | 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝙈𝙀𝙉𝙐 🪄", description: null, rowId: `${usedPrefix}descargasmenu`},
