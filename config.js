@@ -150,6 +150,11 @@ global.wait = '*⌛ _Cargando..._ ▬▬▬▭*'
 
 //rpg 
  
+global.htki = '*⭑•̩̩͙⊱•••• ☪*'
+global.htka = '*☪ ••••̩̩͙⊰•⭑*'
+
+
+
 global.comienzo = '• • ◕◕════'
 global.fin = '════◕◕ • •'
 
