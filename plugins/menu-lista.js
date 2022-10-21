@@ -25,7 +25,7 @@ let { min, xp, max } = xpRange(level, global.multiplier)
 //let name = await conn.getName(m.sender)
 const sections = [
 {
-title: `𝙇𝙄𝙎𝙏𝘼 𝘿𝙀𝙎𝙋𝙇𝙀𝙂𝘼𝘽𝙇𝙀 | 𝘿𝙍𝙊𝙋-𝘿𝙊𝙒𝙉 𝙇𝙄𝙎𝙏`,
+title: comienzo + `💖 𝙇𝙄𝙎𝙏𝘼 𝘿𝙀𝙎𝙋𝙇𝙀𝙂𝘼𝘽𝙇𝙀 | 𝘿𝙍𝙊𝙋-𝘿𝙊𝙒𝙉 𝙇𝙄𝙎𝙏 💖` + fin ,
 rows: [
       {title: "💖 𝘾𝙍𝙀𝘼𝘿𝙊𝙍𝘼 | 𝘾𝙍𝙀𝘼𝙏𝙊𝙍 💖", description: null, rowId: `${usedPrefix}creadora`},
       {title: "💖 𝘿𝙊𝙉𝘼𝙍 | 𝘿𝙊𝙉𝘼𝙏𝙀 💖", description: null, rowId: `${usedPrefix}donar`},
