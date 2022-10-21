@@ -148,6 +148,13 @@ global.wait = '*⌛ _Cargando..._ ▬▬▬▭*'
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
+//rpg 
+ 
+global.comienzo = '• • ◕◕════'
+globsl.fin = '════◕◕ • •'
+
+
+
 global.multiplier = 100 // Cuanto más alto, más difícil subir de nivel | The higher, The harder levelup
 
 global.rpg = {
@@ -170,11 +177,5 @@ watchFile(file, () => {
   unwatchFile(file)
   console.log(chalk.redBright("Update 'config.js'"))
   import(`${file}?update=${Date.now()}`)
- 
- //rpg 
- 
- global.comienzo = '• • ◕◕════'
- globsl.fin = '════◕◕ • •'
-  
  
 })
