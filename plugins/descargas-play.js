@@ -30,8 +30,8 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 const sections = [{
 title: comienzo + ' 📡 𝗧𝗜𝗣𝗢𝗦 𝗗𝗘 𝗗𝗘𝗦𝗖𝗔𝗥𝗚𝗔𝗦 ' + fin,
 rows: [
-{title: "𓃠 𝗔 𝗨 𝗗 𝗜 𝗢 (Opcion 1)", rowId: `${usedPrefix}yta ${url}`, description: `${title}\n`},
-{title: "𓃠 𝗔 𝗨 𝗗 𝗜 𝗢 (Opcion 2)", rowId: `${usedPrefix}play.1 ${url}`, description: `${title}\n`},
+  {title: "𓃠 𝗔 𝗨 𝗗 𝗜 𝗢 (Opcion 1)",rowId: `${usedPrefix}yta ${url}`, description: `${title}\n`},
+  {title: "𓃠 𝗩 𝗜 𝗗 𝗘 𝗢 (Opcion 2)",rowId: `${usedPrefix}ytv ${url}`, description: `${title}\n`},
 ]}]
    
 const listMessage = {
