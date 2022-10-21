@@ -36,6 +36,7 @@ rows: [
    
 const listMessage = {
   text: `*𝙀𝙇𝙄𝙅𝘼 𝙌𝙐𝙀 𝙑𝘼 𝙃𝘼𝘾𝙀𝙍 𝘾𝙊𝙉  ${text}*`,
+  footer: global.wm,
   title: ` *♻️ 𝘿𝙀𝙎𝘾𝘼𝙍𝙂𝘼𝙎* `,
   buttonText: `🍄 𝙀𝙇𝙀𝙍𝙂𝙄𝙍 🍁`,
   sections
