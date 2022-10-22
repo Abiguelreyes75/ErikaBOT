@@ -22,7 +22,7 @@ let chat = global.db.data.chats[m.chat]
 let delet = m.key.participant
 let bang = m.key.id
 let bot = global.db.data.settings[this.user.jid] || {}
-let user = global.db.data.users[m.sender]
+//let user = global.db.data.users[m.sender]
 
 this.spam[m.sender].lastspam = new Date * 1
 
@@ -31,10 +31,11 @@ let texto = `*@${m.sender.split("@")[0]} No hagas Spam!!!! 🤨!! bloqueado por 
 if (new Date - user.desbloquear < 15000) return
 
 await conn.sendButton(m.chat, texto, wm, null, [['Menu', '/menu']], m, { mentions: this.parseMention(texto) })
-await user.banned = true
+user.banned = true
 
 //await m.reply(`${username} *No hagas Spam!!!! 🤨!! bloqueado por: 15 segundos*`) 
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
+  
 
 //setTimeout(() => {
 //user.banned = false
