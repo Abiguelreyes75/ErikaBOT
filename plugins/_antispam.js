@@ -28,9 +28,9 @@ this.spam[m.sender].lastspam = new Date * 1
 let username = conn.getName(m.sender)
 var tiempo = 15000 * 1 //15s
 var now = new Date() * 1
-let bloquear = await this.updateBlockStatus(m.chat, 'block')
-if (now < user[bloquear].desbloquear) user[bloquear].desbloquear += tiempo
-else user[bloquear].desbloquear = now + tiempo
+//let bloquear = await this.updateBlockStatus(m.chat, 'block')
+if (now < user.desbloquear) user.desbloquear += tiempo
+else user.desbloquear = now + tiempo
   
 await m.reply(`${username} *No hagas Spam!!!! 🤨!! bloqueado por:*\n\n${msToTime(tiempo - new Date())}`) 
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
