@@ -34,15 +34,22 @@ await this.updateBlockStatus(m.chat, 'block')
 //[null, null]], null)}, 15000) //15 segundos
 //m.reply('*Fue desbloqueado después de 15 Segundos, NO HAGA SPAM*')}, 15000)
 
+//function desbloquear(){
+//await this.updateBlockStatus(m.chat, 'unblock')  
+//await m.reply('*Fue desbloqueado después de 15 Segundos, NO HAGA SPAM*')
+//}
+//setTimeout(desbloquear, 15000);
+  
+} else {
+this.spam[m.sender].spam = 0
+this.spam[m.sender].lastspam = new Date * 1
+  
 function desbloquear(){
 await this.updateBlockStatus(m.chat, 'unblock')  
 await m.reply('*Fue desbloqueado después de 15 Segundos, NO HAGA SPAM*')
 }
 setTimeout(desbloquear, 15000);
   
-} else {
-this.spam[m.sender].spam = 0
-this.spam[m.sender].lastspam = new Date * 1
 }}
   
 } catch (e) {
