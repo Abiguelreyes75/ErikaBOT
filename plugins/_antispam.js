@@ -25,13 +25,16 @@ let bot = global.db.data.settings[this.user.jid] || {}
 let user = global.db.data.users[m.sender]
 
 let tiempo = [15000, 30000, 60000]
+let time = user.desbloquear + tiempo * 1 
+if (new Date - user.desbloquear < tiempo * 1) return
+
 this.spam[m.sender].lastspam = new Date * 1
-  
-if (tiempo === tiempo) return 
+//if (tiempo === tiempo) return 
 let texto = `*@${m.sender.split("@")[0]} No hagas Spam!!!! 🤨!! bloqueado por ${tiempo / 1000} Segundos*`
 
-await conn.sendButton(m.chat, texto, wm, null, [['Menu', '/menu']], m, { mentions: this.parseMention(texto) })
+await conn.sendButton(m.chat, texto, `${msToTime(time - new Date())}\n` + wm, null, [['Menu', '/menu']], m, { mentions: this.parseMention(texto) })
 user.banned = true
+user.desbloquear = new Date * 1  
   
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
   
@@ -56,3 +59,16 @@ console.log(e)
 m.reply('*ERROR*')
 }}
 export default handler
+
+function msToTime(duration) {
+var milliseconds = parseInt((duration % 1000) / 100),
+seconds = Math.floor((duration / 1000) % 60),
+minutes = Math.floor((duration / (1000 * 60)) % 60),
+hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
+
+hours = (hours < 10) ? "0" + hours : hours
+minutes = (minutes < 10) ? "0" + minutes : minutes
+seconds = (seconds < 10) ? "0" + seconds : seconds
+
+return minutes + " m y " + seconds + " s " 
+}  
