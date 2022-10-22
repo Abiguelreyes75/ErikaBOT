@@ -1,6 +1,6 @@
 let handler = m => m
 handler.all = async function (m) {
-let user = global.db.data.users[m.sender]
+
 if (!db.data.chats[m.chat].antispam && m.isGroup) throw 0
 this.spam = this.spam ? this.spam : {}
 if (!(m.sender in this.spam)) {
@@ -22,18 +22,17 @@ let chat = global.db.data.chats[m.chat]
 let delet = m.key.participant
 let bang = m.key.id
 let bot = global.db.data.settings[this.user.jid] || {}
-//let user = global.db.data.users[m.sender]
+let user = global.db.data.users[m.sender]
 
+let tiempo = [15000, 30000, 60000]
 this.spam[m.sender].lastspam = new Date * 1
-
-let time = user.desbloquear + 15000 * 1
-let texto = `*@${m.sender.split("@")[0]} No hagas Spam!!!! 🤨!! bloqueado por ${msToTime(time - new Date())}*`
-if (new Date - user.desbloquear < 15000) return
+  
+if (tiempo === tiempo) return 
+let texto = `*@${m.sender.split("@")[0]} No hagas Spam!!!! 🤨!! bloqueado por ${tiempo / 1000} Segundos*`
 
 await conn.sendButton(m.chat, texto, wm, null, [['Menu', '/menu']], m, { mentions: this.parseMention(texto) })
 user.banned = true
-
-//await m.reply(`${username} *No hagas Spam!!!! 🤨!! bloqueado por: 15 segundos*`) 
+  
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
   
 
@@ -50,8 +49,6 @@ await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id:
 } else {
 this.spam[m.sender].spam = 0
 this.spam[m.sender].lastspam = new Date * 1
-user.desbloquear = new Date * 1	
-    
 }}
   
 } catch (e) {
@@ -59,24 +56,3 @@ console.log(e)
 m.reply('*ERROR*')
 }}
 export default handler
-
-/*function clockString(ms) {
-  let h = Math.floor(ms / 3600000)
-  let m = Math.floor(ms / 60000) % 60
-  let s = Math.floor(ms / 1000) % 60
-  console.log({ms,h,m,s})
-  return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':')
-}*/
-
-function msToTime(duration) {
-var milliseconds = parseInt((duration % 1000) / 100),
-s = Math.floor((duration / 1000) % 60),
-m = Math.floor((duration / (1000 * 60)) % 60),
-h = Math.floor((duration / (1000 * 60 * 60)) % 24)
-
-h = (h < 10) ? "0" + h : h
-m = (m < 10) ? "0" + m : m
-s = (s < 10) ? "0" + s : s
-
-return h + ":" + m + ":" + s
-}  
