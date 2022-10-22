@@ -26,16 +26,19 @@ let user = global.db.data.users[m.sender]
 this.spam[m.sender].lastspam = new Date * 1
 
 //let username = conn.getName(m.sender)
-var tiempo = 15000 * 1 //15s
-var now = new Date() * 1
-let bloquear = await this.updateBlockStatus(m.chat, 'block')
-if (now < user.desbloquear) user.desbloquear += tiempo
-else user.desbloquear = now + tiempo
+//var tiempo = 15000 * 1 //15s
+//var now = new Date() * 1
+//let bloquear = await this.updateBlockStatus(m.chat, 'block')
+//if (now < user.desbloquear) user.desbloquear += tiempo
+//else user.desbloquear = now + tiempo
+let time = user.desbloquear + 15000
+if (new Date - user.desbloquear < 15000) return
 user.banned = true
-let texto = `*@${m.sender.split("@")[0]} No hagas Spam!!!! 🤨!! bloqueado por ${clockString(tiempo - new Date())}*`
+let texto = `*@${m.sender.split("@")[0]} No hagas Spam!!!! 🤨!! bloqueado por ${clockString(time - new Date())}*`
 await this.sendButton(m.chat, texto, wm, null, [['Menu', '/menu']], m, { mentions: this.parseMention(texto) })
 //await m.reply(`${username} *No hagas Spam!!!! 🤨!! bloqueado por: 15 segundos*`) 
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
+user.desbloquear = new Date * 1	
 
 //setTimeout(() => {
 //user.banned = false
