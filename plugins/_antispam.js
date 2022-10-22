@@ -32,14 +32,15 @@ this.spam[m.sender].lastspam = new Date * 1
 //if (now < user.desbloquear) user.desbloquear += tiempo
 //else user.desbloquear = now + tiempo
 user.banned = true
-await m.reply(`${username} *No hagas Spam!!!! 🤨!! bloqueado por: 15 segundos*`) 
+let texto = `*@${m.sender.split("@")[0]} No hagas Spam!!!! 🤨!! bloqueado por 15 segundos`
+await this.sendButton(m.chat, texto, wm, null, [['Menu', '/menu']], m, { mentions: this.parseMention(texto) })
+//await m.reply(`${username} *No hagas Spam!!!! 🤨!! bloqueado por: 15 segundos*`) 
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
-setTimeout(() => {
-//conn.updateBlockStatus(m.chat, 'unblock')  
+
+  setTimeout(() => {
 user.banned = false
 conn.sendHydrated(m.chat, '*Fue desbloqueado después de 15 Segundos, NO HAGA SPAM*', wm, null, null, null, null, null, [
 [null, null]], null)}, 15000)
-//await this.updateBlockStatus(m.chat, 'block')
   
 //setTimeout(() => {
 //conn.updateBlockStatus(m.chat, 'unblock')  
