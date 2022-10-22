@@ -56,6 +56,7 @@ export async function handler(chatUpdate) {
                         user.age = -1
                     if (!isNumber(user.regTime))
                         user.regTime = -1
+                    
                 }
                 if (!isNumber(user.afk))
                     user.afk = -1
@@ -71,6 +72,9 @@ export async function handler(chatUpdate) {
                     user.role = 'Novato'
                 if (!('autolevelup' in user))
                     user.autolevelup = true
+                if (!isNumber(user.desbloquear)) 
+                    user.desbloquear = 0
+                
 
                 if (!isNumber(user.money))
                     user.money = 0
@@ -188,6 +192,7 @@ export async function handler(chatUpdate) {
                     level: 0,
                     role: 'Novato',
                     autolevelup: true,
+                    desbloquear: 0,
 
                     money: 0,
                     health: 100,
