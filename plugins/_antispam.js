@@ -27,6 +27,13 @@ m.reply('*No hagas Spam!!!! 🤨!! bloqueado por 15 segundos*')
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
 await this.updateBlockStatus(m.chat, 'block')
   
+  
+function desbloquear(){
+//await this.updateBlockStatus(m.chat, 'unblock')  
+await m.reply('*Fue desbloqueado después de 15 Segundos, NO HAGA SPAM*')
+}
+setTimeout(desbloquear, 15000);
+  
 //setTimeout(() => {
 //setTimeout(function(){
 //await this.updateBlockStatus(m.chat, 'unblock')
@@ -43,13 +50,7 @@ await this.updateBlockStatus(m.chat, 'block')
 } else {
 this.spam[m.sender].spam = 0
 this.spam[m.sender].lastspam = new Date * 1
-  
-function desbloquear(){
-await this.updateBlockStatus(m.chat, 'unblock')  
-await m.reply('*Fue desbloqueado después de 15 Segundos, NO HAGA SPAM*')
-}
-setTimeout(desbloquear, 15000);
-  
+    
 }}
   
 } catch (e) {
