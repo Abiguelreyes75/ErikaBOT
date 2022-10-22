@@ -1,7 +1,7 @@
 export async function all(m, conn) {
 //let username = conn.getName(m.sender)
 let user = global.db.data.users[m.sender]  
-if (user)
+if (!m.message)
 return
 if (!user.desbloquear)
 return !0
