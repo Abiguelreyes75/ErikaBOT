@@ -9,7 +9,7 @@ if (+new Date() > user.desbloquear) {
   
 setTimeout(() => {
 user.banned = false
-conn.sendHydrated(m.chat, '*Fue desbloqueado después de 15 Segundos, NO HAGA SPAM*', wm, null, null, null, null, null, [
+this.sendHydrated(m.chat, '*Fue desbloqueado después de 15 Segundos, NO HAGA SPAM*', wm, null, null, null, null, null, [
 [null, null]], null)}, 15000)
         
 user.desbloquear = null
