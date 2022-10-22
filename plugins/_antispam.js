@@ -32,7 +32,7 @@ var now = new Date() * 1
 if (now < user.desbloquear) user.desbloquear += tiempo
 else user.desbloquear = now + tiempo
   
-await m.reply(`${username} *No hagas Spam!!!! 🤨!! bloqueado por:*\n\n${msToTime(tiempo - new Date())}`) 
+await m.reply(`${username} *No hagas Spam!!!! 🤨!! bloqueado por:*\n\n${msToDate(tiempo - new Date())}`) 
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
 await this.updateBlockStatus(m.chat, 'block')
   
