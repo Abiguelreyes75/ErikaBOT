@@ -1,4 +1,4 @@
-export async function all(m, conn) {
+/*export async function all(m, conn) {
 //let username = conn.getName(m.sender)
 let user = global.db.data.users[m.sender]  
 if (!m.message)
@@ -13,4 +13,4 @@ conn.sendHydrated(m.chat, `*Fue desbloqueado después de 15 Segundos, NO HAGA SP
 [null, null]], null)}, 15000)
         
 user.desbloquear = null
-}} 
+}} */
