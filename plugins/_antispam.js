@@ -76,8 +76,8 @@ if (chat.antiSpam) {
 
 if (m.sender in this.spam) {
 this.spam[m.sender].count++
-if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 5) {
-if (this.spam[m.sender].count > 5) {
+if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 2000) {
+if (this.spam[m.sender].count > 3) {
 user.banned = true
 
 let texto = `*@${m.sender.split("@")[0]} No hagas Spam!!!! 🤨!! bloqueado por 15 segundos`
