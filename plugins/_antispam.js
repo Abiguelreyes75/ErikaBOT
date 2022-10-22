@@ -24,14 +24,12 @@ let bang = m.key.id
 let bot = global.db.data.settings[this.user.jid] || {}
 let user = global.db.data.users[m.sender]
 
-let tiempo = [15000, 30000, 60000] * 1
-let time = user.desbloquear + tiempo * 1 
-if (new Date - user.desbloquear < tiempo * 1) return
-
 this.spam[m.sender].lastspam = new Date * 1
-//if (tiempo === tiempo) return 
-let texto = `*@${m.sender.split("@")[0]} No hagas Spam!!!! 🤨!! bloqueado por ${tiempo / 1000} Segundos*`
+let tiempo = 60000 * 1
+let time = user.desbloquear + tiempo * 1 
+let texto = `*@${m.sender.split("@")[0]} No hagas Spam!!!! 🤨!! bloqueado por ${tiempo / 1000 - 59} Minuto*`
 
+if (new Date - user.desbloquear < tiempo * 1) return
 await conn.sendButton(m.chat, texto, `${msToTime(time - new Date())}\n` + wm, null, [['Menu', '/menu']], m, { mentions: this.parseMention(texto) })
 user.banned = true
 user.desbloquear = new Date * 1  
