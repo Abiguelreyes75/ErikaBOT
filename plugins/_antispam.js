@@ -32,13 +32,14 @@ this.spam[m.sender].lastspam = new Date * 1
 //if (now < user.desbloquear) user.desbloquear += tiempo
 //else user.desbloquear = now + tiempo
 let time = user.desbloquear + 15000
-if (new Date - user.desbloquear < 15000) return
-user.banned = true
 let texto = `*@${m.sender.split("@")[0]} No hagas Spam!!!! 🤨!! bloqueado por ${clockString(time - new Date())}*`
-await this.sendButton(m.chat, texto, wm, null, [['Menu', '/menu']], m, { mentions: this.parseMention(texto) })
+if (new Date - user.desbloquear < 15000) return
+
+await conn.sendButton(m.chat, texto, wm, null, [['Menu', '/menu']], m, { mentions: this.parseMention(texto) })
+user.banned = true
+user.desbloquear = new Date * 1	
 //await m.reply(`${username} *No hagas Spam!!!! 🤨!! bloqueado por: 15 segundos*`) 
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
-user.desbloquear = new Date * 1	
 
 //setTimeout(() => {
 //user.banned = false
