@@ -72,7 +72,7 @@ m = Math.floor((duration / (1000 * 60)) % 60),
 h = Math.floor((duration / (1000 * 60 * 60)) % 24)
 
 h = (h < 10) ? "0" + h : h
-m = (minutes < 10) ? "0" + m : m
+m = (m < 10) ? "0" + m : m
 s = (s < 10) ? "0" + s : s
 
 return h + ":" + m + ":" + s
