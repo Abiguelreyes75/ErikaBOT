@@ -23,27 +23,23 @@ let bang = m.key.id
 let bot = global.db.data.settings[this.user.jid] || {}
 
 this.spam[m.sender].lastspam = new Date * 1
-m.reply('*No hagas Spam!!!! 🤨!! bloqueado por 15 segundos*')
-await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
-await this.updateBlockStatus(m.chat, 'block')
-  
-  
-/*function desbloquear(){
-//await this.updateBlockStatus(m.chat, 'unblock')  
-await m.reply('*Fue desbloqueado después de 15 Segundos, NO HAGA SPAM*')
-}
-setTimeout(desbloquear, 15000);*/
-  
 
-//function loopThrough() {
-setTimeout(() => {
-//this.updateBlockStatus(m.chat, 'unblock').forEach(async desbloquear => {
-//await Promise.resolve(desbloquear);
-conn.updateBlockStatus(m.chat, 'unblock')  
-conn.sendHydrated(m.chat, '*Fue desbloqueado después de 15 Segundos, NO HAGA SPAM*', wm, null, null, null, null, null, [
-[null, null]], null)}, 15000)
-//})}
+let username = conn.getName(m.sender)
+var tiempo = 15000 * 1 //15s
+var now = new Date() * 1
+let bloquear = await this.updateBlockStatus(m.chat, 'block')
+if (now < global.db.data.users[bloquear].desbloquear) global.db.data.users[bloquear].desbloquear += tiempo
+else global.db.data.users[bloquear].desbloquear = now + tiempo
   
+m.reply(`${username} *No hagas Spam!!!! 🤨!! bloqueado por:*\n\n${msToDate(global.db.data.users[bloquear].desbloquear - now)}`)
+await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
+//await this.updateBlockStatus(m.chat, 'block')
+  
+//setTimeout(() => {
+//conn.updateBlockStatus(m.chat, 'unblock')  
+//conn.sendHydrated(m.chat, '*Fue desbloqueado después de 15 Segundos, NO HAGA SPAM*', wm, null, null, null, null, null, [
+//[null, null]], null)}, 15000)
+
 } else {
 this.spam[m.sender].spam = 0
 this.spam[m.sender].lastspam = new Date * 1
@@ -55,3 +51,15 @@ console.log(e)
 m.reply('*ERROR*')
 }}
 export default handler
+
+function msToDate(ms) {
+let temp = ms
+let days = Math.floor(ms / (24 * 60 * 60 * 1000));
+let daysms = ms % (24 * 60 * 60 * 1000);
+let hours = Math.floor((daysms) / (60 * 60 * 1000));
+let hoursms = ms % (60 * 60 * 1000);
+let minutes = Math.floor((hoursms) / (60 * 1000));
+let minutesms = ms % (60 * 1000);
+let sec = Math.floor((minutesms) / (1000));
+return days + " *Día(s)* ☀️\n" + hours + " *Hora(s)* ⏳\n" + minutes + " *Minuto(s)* ⏰\n" + sec + " *Segundo(s)* 🕐\n";
+}
