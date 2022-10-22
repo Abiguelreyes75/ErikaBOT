@@ -29,6 +29,7 @@ this.spam[m.sender].lastspam = new Date * 1
 }
 } catch (e) {
 console.log(e)
+m.reply('*ERROR*')
 }
 }
 export default handler
