@@ -1,4 +1,4 @@
-/*let handler = m => m
+let handler = m => m
 handler.all = async function (m) {
 if (!db.data.chats[m.chat].antispam && m.isGroup) throw 0
 this.spam = this.spam ? this.spam : {}
@@ -25,16 +25,21 @@ let user = global.db.data.users[m.sender]
 
 this.spam[m.sender].lastspam = new Date * 1
 
-let username = conn.getName(m.sender)
-var tiempo = 15000 * 1 //15s
-var now = new Date() * 1
+//let username = conn.getName(m.sender)
+//var tiempo = 15000 * 1 //15s
+//var now = new Date() * 1
 //let bloquear = await this.updateBlockStatus(m.chat, 'block')
-if (now < user.desbloquear) user.desbloquear += tiempo
-else user.desbloquear = now + tiempo
-  
-await m.reply(`${username} *No hagas Spam!!!! 🤨!! bloqueado por:*\n\n${msToDate(user.expired - now)}`) 
+//if (now < user.desbloquear) user.desbloquear += tiempo
+//else user.desbloquear = now + tiempo
+user.banned = true
+await m.reply(`${username} *No hagas Spam!!!! 🤨!! bloqueado por: 15 segundos*`) 
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
-await this.updateBlockStatus(m.chat, 'block')
+setTimeout(() => {
+//conn.updateBlockStatus(m.chat, 'unblock')  
+user.banned = false
+conn.sendHydrated(m.chat, '*Fue desbloqueado después de 15 Segundos, NO HAGA SPAM*', wm, null, null, null, null, null, [
+[null, null]], null)}, 15000)
+//await this.updateBlockStatus(m.chat, 'block')
   
 //setTimeout(() => {
 //conn.updateBlockStatus(m.chat, 'unblock')  
@@ -53,7 +58,7 @@ m.reply('*ERROR*')
 }}
 export default handler
 
-function msToDate(ms) {
+/*function msToDate(ms) {
 let temp = ms
 let days = Math.floor(ms / (24 * 60 * 60 * 1000));
 let daysms = ms % (24 * 60 * 60 * 1000);
@@ -66,7 +71,7 @@ return days + " *Día(s)* ☀️\n" + hours + " *Hora(s)* ⏳\n" + minutes + " *
 }*/
 
 
-export async function all(m) {
+/*export async function all(m) {
 if (!m.message)
 return
 this.spam = this.spam ? this.spam : {}
@@ -95,4 +100,4 @@ this.spam[m.sender] = {
 jid: m.sender,
 count: 0,
 lastspam: 0
-}}}
+}}}*/
