@@ -21,6 +21,7 @@ let chat = global.db.data.chats[m.chat]
 let delet = m.key.participant
 let bang = m.key.id
 let bot = global.db.data.settings[this.user.jid] || {}
+let user = global.db.data.users[m.sender]
 
 this.spam[m.sender].lastspam = new Date * 1
 
@@ -28,10 +29,10 @@ let username = conn.getName(m.sender)
 var tiempo = 15000 * 1 //15s
 var now = new Date() * 1
 let bloquear = await this.updateBlockStatus(m.chat, 'block')
-if (now < global.db.data.users[bloquear].desbloquear) global.db.data.users[bloquear].desbloquear += tiempo
-else global.db.data.users[bloquear].desbloquear = now + tiempo
+if (now < user[bloquear].desbloquear) user[bloquear].desbloquear += tiempo
+else user[bloquear].desbloquear = now + tiempo
   
-await m.reply(`${username} *No hagas Spam!!!! 🤨!! bloqueado por:*\n\n${msToDate(global.db.data.users[bloquear].desbloquear - now)}`)
+await m.reply(`${username} *No hagas Spam!!!! 🤨!! bloqueado por:*\n\n${msToTime(tiempo - new Date())}`) 
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
 //await this.updateBlockStatus(m.chat, 'block')
   
