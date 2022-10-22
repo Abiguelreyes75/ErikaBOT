@@ -22,7 +22,7 @@ let bang = m.key.id
 let bot = global.db.data.settings[this.user.jid] || {}
 this.spam[m.sender].lastspam = new Date * 1
 //global.DATABASE._data.users[m.sender].Banneduser = true
-m.reply('No hagas Spam, anda hacer spam a la concha de tu hermana 🤨!!')
+m.reply('No hagas Spam!!!! 🤨!!')
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
 await this.updateBlockStatus(m.chat, 'block')
 } else {
