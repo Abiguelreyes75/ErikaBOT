@@ -27,10 +27,10 @@ m.reply('*No hagas Spam!!!! 🤨!! bloqueado por 15 segundos*')
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
 await this.updateBlockStatus(m.chat, 'block')
   
-setTimeout(() => {
+/*setTimeout(() => {
 await this.updateBlockStatus(m.chat, 'unblock')
 await conn.sendHydrated(m.chat, '*Fue desbloqueado después de 15 Segundos, NO HAGA SPAM*', wm, null, null, null, null, null, [
-[null, null]], null)}, 15000) //15 segundos
+[null, null]], null)}, 15000) //15 segundos*/
 //m.reply('*Fue desbloqueado después de 15 Segundos, NO HAGA SPAM*')
 } else {
 this.spam[m.sender].spam = 0
