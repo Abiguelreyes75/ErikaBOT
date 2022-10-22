@@ -269,7 +269,9 @@ export async function handler(chatUpdate) {
                 if (!('stickers' in chat))
                     chat.stickers = false
                 if (!('audios' in chat))
-                    chat.audios = false                            
+                    chat.audios = false
+                if (!('antispam' in chat))
+                    chat.antispam = true
                 if (!('antiLink' in chat))
                     chat.antiLink = false
                 if (!('antiLink2' in chat))
@@ -298,6 +300,7 @@ export async function handler(chatUpdate) {
                     antiLink2: false,
                     viewonce: false,
                     antiToxic: false,
+                    antispam: true,
                     expired: 0,
                 }
             let settings = global.db.data.settings[this.user.jid]
