@@ -26,7 +26,7 @@ let user = global.db.data.users[m.sender]
 this.spam[m.sender].lastspam = new Date * 1
 
 let time = user.desbloquear + 15000 * 1
-let texto = `*@${m.sender.split("@")[0]} No hagas Spam!!!! 🤨!! bloqueado por ${clockString(time - new Date())}*`
+let texto = `*@${m.sender.split("@")[0]} No hagas Spam!!!! 🤨!! bloqueado por ${msToTime(time - new Date())}*`
 if (new Date - user.desbloquear < 15000) return
 
 await conn.sendButton(m.chat, texto, wm, null, [['Menu', '/menu']], m, { mentions: this.parseMention(texto) })
@@ -57,10 +57,23 @@ m.reply('*ERROR*')
 }}
 export default handler
 
-function clockString(ms) {
+/*function clockString(ms) {
   let h = Math.floor(ms / 3600000)
   let m = Math.floor(ms / 60000) % 60
   let s = Math.floor(ms / 1000) % 60
   console.log({ms,h,m,s})
   return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':')
-}
+}*/
+
+function msToTime(duration) {
+var milliseconds = parseInt((duration % 1000) / 100),
+s = Math.floor((duration / 1000) % 60),
+m = Math.floor((duration / (1000 * 60)) % 60),
+h = Math.floor((duration / (1000 * 60 * 60)) % 24)
+
+h = (hours < 10) ? "0" + hours : hours
+m = (minutes < 10) ? "0" + minutes : minutes
+s = (seconds < 10) ? "0" + seconds : seconds
+
+return h + ":" + m + ":" + s
+}  
