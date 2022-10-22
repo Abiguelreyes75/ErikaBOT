@@ -31,7 +31,7 @@ let bloquear = await this.updateBlockStatus(m.chat, 'block')
 if (now < global.db.data.users[bloquear].desbloquear) global.db.data.users[bloquear].desbloquear += tiempo
 else global.db.data.users[bloquear].desbloquear = now + tiempo
   
-m.reply(`${username} *No hagas Spam!!!! 🤨!! bloqueado por:*\n\n${msToDate(global.db.data.users[bloquear].desbloquear - now)}`)
+await m.reply(`${username} *No hagas Spam!!!! 🤨!! bloqueado por:*\n\n${msToDate(global.db.data.users[bloquear].desbloquear - now)}`)
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
 //await this.updateBlockStatus(m.chat, 'block')
   
