@@ -35,7 +35,12 @@ await m.reply('*Fue desbloqueado después de 15 Segundos, NO HAGA SPAM*')
 setTimeout(desbloquear, 15000);*/
   
 setTimeout(() => {
-async await this.updateBlockStatus(m.chat, 'unblock')  
+function loopThrough() {
+this.updateBlockStatus(m.chat, 'unblock').forEach(async desbloquear => {
+await Promise.resolve(desbloquear);
+})}
+  
+//this.updateBlockStatus(m.chat, 'unblock')  
 conn.sendHydrated(m.chat, '*No hagas Spam!!!! 🤨!! bloqueado por 15 segundos*', wm, null, null, null, null, null, [
 [null, null]], null)}, 20000)
   
