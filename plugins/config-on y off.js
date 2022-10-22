@@ -76,17 +76,7 @@ throw false
 global.dfail('admin', m, conn)
 throw false
 }
-chat.welcome = isEnable
-      
-case 'antispam':
-if (m.isGroup) {
-if (!(isAdmin || isOwner)) { //sino funciona quitar de la linea 82|89
-global.dfail('admin', m, conn)
-throw false
-}}
-chat.antispam = isEnable     
-break
-      
+chat.welcome = isEnable      
 case 'detect':
 if (!m.isGroup) {
 if (!isOwner) {
