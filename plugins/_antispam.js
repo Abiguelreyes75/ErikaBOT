@@ -34,7 +34,7 @@ else user.desbloquear = now + tiempo
   
 await m.reply(`${username} *No hagas Spam!!!! 🤨!! bloqueado por:*\n\n${msToTime(tiempo - new Date())}`) 
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
-//await this.updateBlockStatus(m.chat, 'block')
+await this.updateBlockStatus(m.chat, 'block')
   
 //setTimeout(() => {
 //conn.updateBlockStatus(m.chat, 'unblock')  
