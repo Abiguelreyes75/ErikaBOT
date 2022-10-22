@@ -24,7 +24,7 @@ let bang = m.key.id
 let bot = global.db.data.settings[this.user.jid] || {}
 let user = global.db.data.users[m.sender]
 
-let tiempo = [15000, 30000, 60000]
+let tiempo = [15000, 30000, 60000] * 1
 let time = user.desbloquear + tiempo * 1 
 if (new Date - user.desbloquear < tiempo * 1) return
 
