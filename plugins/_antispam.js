@@ -1,4 +1,4 @@
-let handler = m => m
+/*let handler = m => m
 handler.all = async function (m) {
 if (!db.data.chats[m.chat].antispam && m.isGroup) throw 0
 this.spam = this.spam ? this.spam : {}
@@ -63,4 +63,36 @@ let minutes = Math.floor((hoursms) / (60 * 1000));
 let minutesms = ms % (60 * 1000);
 let sec = Math.floor((minutesms) / (1000));
 return days + " *Día(s)* ☀️\n" + hours + " *Hora(s)* ⏳\n" + minutes + " *Minuto(s)* ⏰\n" + sec + " *Segundo(s)* 🕐\n";
+}*/
+
+
+export async function all(m) {
+if (!m.message)
+return
+this.spam = this.spam ? this.spam : {}
+let chat = global.db.data.chats[m.chat]
+let user = global.db.data.users[m.sender]
+if (chat.antiSpam) {
+
+if (m.sender in this.spam) {
+this.spam[m.sender].count++
+if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 5) {
+if (this.spam[m.sender].count > 5) {
+user.banned = true
+
+let texto = `*@${m.sender.split("@")[0]} No hagas Spam!!!! 🤨!! bloqueado por 15 segundos`
+this.sendButton(m.chat, texto, wm, null, [['Menu', '/menu']], m, { mentions: this.parseMention(texto) })
+setTimeout(() => {
+//conn.updateBlockStatus(m.chat, 'unblock')  
+user.banned = false
+conn.sendHydrated(m.chat, '*Fue desbloqueado después de 15 Segundos, NO HAGA SPAM*', wm, null, null, null, null, null, [
+[null, null]], null)}, 15000)
 }
+this.spam[m.sender].count = 0
+this.spam[m.sender].lastspam = m.messageTimestamp.toNumber()
+}}else
+this.spam[m.sender] = {
+jid: m.sender,
+count: 0,
+lastspam: 0
+}}}
