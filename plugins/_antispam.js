@@ -1,7 +1,4 @@
 let handler = m => m
-
-if (!db.data.chats[m.chat].antispam && m.isGroup) throw 0
-
 handler.all = async function (m) {
 this.spam = this.spam ? this.spam : {}
 if (!(m.sender in this.spam)) {
