@@ -10,7 +10,7 @@ let tiempo = [15000, 30000, 60000]
 setTimeout(() => {
 user.banned = false
 this.sendHydrated(m.chat, `*Fue desbloqueado después de ${tiempo / 1000} Segundos, NO HAGA SPAM*`, wm, null, null, null, null, null, [
-[null, null]], null)}, 15000)
+[null, null]], null)}, tiempo)
         
 user.desbloquear = null
 }} 
