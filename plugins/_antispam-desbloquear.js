@@ -1,4 +1,4 @@
-/*export async function all(m, conn) {
+export async function all(m, conn) {
 let texto
 let user = global.db.data.users[m.sender]  
 if (!m.message)
@@ -16,4 +16,4 @@ this.sendButton(m.chat, texto, wm, null, [['☘️ 𝗠 𝗘 𝗡 𝗨', '/menu'
 //[null, null]], null)}, tiempo)
         
 user.desbloquear = null
-}} */
+}}
