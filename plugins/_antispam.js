@@ -29,7 +29,7 @@ let tiempo = 60000 * 1
 
 let texto = `*@${m.sender.split("@")[0]} 🤨 NO HAGAS SPAM, BLOQUEADO POR ${tiempo / 1000 - 59} MINUTO*`
 
-//if (new Date - user.desbloquear < tiempo * 1) return
+if (new Date - user.desbloquear < tiempo * 1) return
 await conn.reply(m.chat, texto,  m, { mentions: this.parseMention(texto) })
 //await conn.sendButton(m.chat, texto, `${msToTime(time - new Date())}\n` + wm, null, [['Menu', '/menu']], m, { mentions: this.parseMention(texto) })
 //conn.sendHydrated(m.chat, texto, wm, null, null, null, null, null, [
