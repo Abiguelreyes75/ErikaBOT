@@ -36,7 +36,7 @@ await conn.reply(m.chat, texto,  m, { mentions: this.parseMention(texto) })
 //[null, null]], m, { mentions: this.parseMention(texto) }), tiempo)
 user.banned = true
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
-
+user.desbloquear = new Date * 1  
 } else {
 this.spam[m.sender].spam = 0
 this.spam[m.sender].lastspam = new Date * 1
