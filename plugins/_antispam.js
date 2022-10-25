@@ -32,8 +32,7 @@ let texto = `*@${m.sender.split("@")[0]} 🤨 NO HAGAS SPAM, BLOQUEADO POR ${tie
 if (new Date - user.desbloquear < tiempo * 1) return
 //await conn.reply(m.chat, texto,  m, { mentions: this.parseMention(texto) })
 //await conn.sendButton(m.chat, texto, `${msToTime(time - new Date())}\n` + wm, null, [['Menu', '/menu']], m, { mentions: this.parseMention(texto) })
-await conn.sendHydrated(m.chat, texto, wm, null, null, null, null, null, [
-[null, null]], m, { mentions: this.parseMention(texto) }), tiempo)
+await conn.sendHydrated(m.chat, texto, wm, null, null, null, null, null, [[null, null]], m, { mentions: this.parseMention(texto) })
 user.banned = true
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
 user.desbloquear = new Date * 1  
