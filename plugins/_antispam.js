@@ -26,7 +26,7 @@ let user = global.db.data.users[m.sender]
 
 this.spam[m.sender].lastspam = new Date * 1
 let tiempo = 60000 * 1
-
+let time = user.desbloquear + tiempo * 1
 let texto = `*@${m.sender.split("@")[0]} 🤨 NO HAGAS SPAM, BLOQUEADO POR ${tiempo / 1000 - 59} MINUTO*`
 
 if (new Date - user.desbloquear < tiempo * 1) return
@@ -36,17 +36,6 @@ await conn.reply(m.chat, texto,  m, { mentions: this.parseMention(texto) })
 //[null, null]], m, { mentions: this.parseMention(texto) }), tiempo)
 user.banned = true
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
-  
-
-//setTimeout(() => {
-//user.banned = false
-//conn.sendHydrated(m.chat, '*Fue desbloqueado después de 15 Segundos, NO HAGA SPAM*', wm, null, null, null, null, null, [
-//[null, null]], null)}, 15000)
-  
-//setTimeout(() => {
-//conn.updateBlockStatus(m.chat, 'unblock')  
-//conn.sendHydrated(m.chat, '*Fue desbloqueado después de 15 Segundos, NO HAGA SPAM*', wm, null, null, null, null, null, [
-//[null, null]], null)}, 15000)
 
 } else {
 this.spam[m.sender].spam = 0
@@ -58,3 +47,16 @@ console.log(e)
 m.reply('*ERROR*')
 }}
 export default handler
+
+function msToTime(duration) {
+var milliseconds = parseInt((duration % 1000) / 100),
+seconds = Math.floor((duration / 1000) % 60),
+minutes = Math.floor((duration / (1000 * 60)) % 60),
+hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
+
+hours = (hours < 10) ? "0" + hours : hours
+minutes = (minutes < 10) ? "0" + minutes : minutes
+seconds = (seconds < 10) ? "0" + seconds : seconds
+
+return minutes + " m y " + seconds + " s " 
+}
