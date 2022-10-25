@@ -26,14 +26,14 @@ let user = global.db.data.users[m.sender]
 
 this.spam[m.sender].lastspam = new Date * 1
 let tiempo = 60000 * 1
-let time = user.desbloquear + tiempo * 1 
-let texto = `*@${m.sender.split("@")[0]} No hagas Spam!!!! 🤨!! bloqueado por ${tiempo / 1000 - 59} Minuto*`
+
+let texto = `*@${m.sender.split("@")[0]} 🤨 NO HAGAS SPAM, BLOQUEADO POR ${tiempo / 1000 - 59} MINUTO*`
 
 if (new Date - user.desbloquear < tiempo * 1) return
-await conn.sendButton(m.chat, texto, `${msToTime(time - new Date())}\n` + wm, null, [['Menu', '/menu']], m, { mentions: this.parseMention(texto) })
+//await conn.sendButton(m.chat, texto, `${msToTime(time - new Date())}\n` + wm, null, [['Menu', '/menu']], m, { mentions: this.parseMention(texto) })
+conn.sendHydrated(m.chat, texto, wm, null, null, null, null, null, [
+[null, null]], m, { mentions: this.parseMention(texto) }), tiempo)
 user.banned = true
-user.desbloquear = new Date * 1  
-  
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
   
 
@@ -57,16 +57,3 @@ console.log(e)
 m.reply('*ERROR*')
 }}
 export default handler
-
-function msToTime(duration) {
-var milliseconds = parseInt((duration % 1000) / 100),
-seconds = Math.floor((duration / 1000) % 60),
-minutes = Math.floor((duration / (1000 * 60)) % 60),
-hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
-
-hours = (hours < 10) ? "0" + hours : hours
-minutes = (minutes < 10) ? "0" + minutes : minutes
-seconds = (seconds < 10) ? "0" + seconds : seconds
-
-return minutes + " m y " + seconds + " s " 
-}  
