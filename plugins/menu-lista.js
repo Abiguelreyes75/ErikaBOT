@@ -202,7 +202,7 @@ text: `╭─────────────────────❀\n�
 ┃➺ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
 ╰━━━━━━━━━━━━━━━━━━━━━⬣`, footer: `${wm}`, //${name} ${ucapan()}
 title: null,
-buttonText: "𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙈𝙀𝙉𝙐 | 𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐", 
+buttonText: "🟢 LISTA DE MENU 🟢", 
 sections }
 
 await conn.sendMessage(m.chat, listMessage)
