@@ -6,6 +6,7 @@ handler.help = ['unbanchat2']
 handler.tags = ['owner']
 handler.command = /^desban1|unbanchat1$/i
 handler.rowner = true
+handler.admin = true
 handler.exp = 50
 
 export default handler
