@@ -1,5 +1,5 @@
 import fetch from 'node-fetch'
-let handler = async (m, {conn, command }) =>
+let handler = async (m, {conn, command }) =>{
 let url = pack6 [Math.floor(Math.random() * pack6.length)]
 conn.sendButton(m.chat, `pack6`, author, url,[['siguiente',`/${command}`]],m)
 }
