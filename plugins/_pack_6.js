@@ -1,5 +1,6 @@
 import fetch from 'node-fetch'
 let handler = async (m, {conn, command }) =>{
+if(!db.data.chats[m.chat].modohorny && m.isGroup)throw '*[⚠️]Los comandos +18 estan desactivados en este grupo, si es administrador de este grupo y desea activarlos escriba #enable nsfw*'
 let url = pack6 [Math.floor(Math.random() * pack6.length)]
 conn.sendButton(m.chat, `🥵(っ◔◡◔)っ ♥ pack ♥🥵`, author, url,[['𝓼𝓲𝓰𝓾𝓲𝓮𝓷𝓽𝓮',`/${command}`]],m)
 }
