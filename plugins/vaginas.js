@@ -8,7 +8,7 @@ handler.help = ['vagina']
 handler.tags = ['internet']
 handler.command = /^(vagina)$/i
 handler.exp = 50
-handler.level = 5
+handler.level = false
 export default handler
 
 global.vagina = [
