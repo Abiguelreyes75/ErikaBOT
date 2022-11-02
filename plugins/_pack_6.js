@@ -5,6 +5,7 @@ conn.sendButton(m.chat, `pack6`, author, url,[['siguiente',`/${command}`]],m)
 }
 handler.help = ['pack6']
 handler.tags = ['internet']
+handler.command = /^(pack6)$/i
 handler.exp = 50
 export default handler
 
