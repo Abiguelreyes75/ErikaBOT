@@ -8,7 +8,7 @@ handler.help = ['tetasgrandes']
 handler.tags = ['internet']
 handler.command = /^(tetasgrandes)$/i
 handler.exp = 50
-handler.level = 3
+handler.level = false
 export default handler
 
 global.tetasgrandes = [
