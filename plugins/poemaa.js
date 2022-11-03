@@ -1,12 +1,13 @@
-let handler = async (m,{conn, command, usedPrefix}) =>{
-try{
- if(command == 'poemaa'){
- await conn.reply(m.chat, 'se esta enviando el poema',m)
- let poemaa = `https://violetics.pw/api/random/pantun?apikey=964f-0c75-7afc`
- await conn.senFile(m.chat, poemaa, 'error.jpg', null , m)}
-}
-  catch{
-  conn.reply(m.chat 'error intente de nuevo',m)
-  }}
-handler.command = /^poemaa/i
-export default handler
+let handler = async (m,{conn, arg, command, usedPrefix}) => {
+    if(command == 'poema'){
+    try{
+    await conn.reply(m.chat, '*[📷]𝐃𝐞𝐬𝐜𝐚𝐫𝐠𝐚𝐧𝐝𝐨 𝐬𝐮 𝐟𝐨𝐭𝐨 𝐞𝐬𝐩𝐞𝐫𝐞 𝐮𝐧 𝐦𝐨𝐦𝐞𝐧𝐭𝐨...*', m)
+    let res = `https://violetics.pw/api/random/pantun?apikey=${Key360}`
+    await conn.sendFile(m.chat,res, 'error.jpg', null, m)}
+    
+    catch {
+    conn.reply(m.chat, 'error intete denuevo',m)
+    }}
+    }
+    handler.command = /^poema/i
+    export default handler
