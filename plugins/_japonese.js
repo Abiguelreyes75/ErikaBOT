@@ -40,7 +40,7 @@
     let res = `https://violetics.pw/api/asupan/cecan?apikey=${Key360}`
     await conn.sendFile(m.chat, res, 'error.jpg', null, m)}
 
-    }}}}}}}
+    }
     catch {
     conn.reply(m.chat, 'error intente de nuevo',m)
     }}
