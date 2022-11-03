@@ -1,5 +1,4 @@
 let handler = async (m,{conn, arg, command, usedPrefix}) => {
-if (!arg[0])throw '*ingrese un texto*'
 if(command == 'japonese'){
 try{
 await conn.reply(m.chat, 'elaborando su foto espere...', m)
