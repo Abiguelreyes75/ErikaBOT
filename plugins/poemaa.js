@@ -8,5 +8,5 @@ try{
   catch{
   conn.reply(m.chat 'error intente de nuevo',m)
   }}
-handler.command = /^poemma/i
+handler.command = /^poemaa/i
 export default handler
