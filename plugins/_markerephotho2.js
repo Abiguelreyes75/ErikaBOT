@@ -1,6 +1,6 @@
 let handler = async (m,{conn,args,command}) => {
 let response = args.join(' ').split('|')
-if (!args[0]) throw '*[❗] ingrese un texto ejemplo .chiken hola|teamo*'
+if (!args[0]) throw '*[❗] 𝗶𝗻𝗴𝗿𝗲𝘀𝗲 𝘂𝗻 𝘁𝗲𝘅𝘁𝗼 𝗲𝗷𝗲𝗺𝗽𝗹𝗼 .𝗰𝗵𝗶𝗸𝗲𝗻 𝗵𝗼𝗹𝗮|𝗴𝗲𝗻𝗶𝗮𝗹*'
 try{
 
 if (command == 'chiken'){
