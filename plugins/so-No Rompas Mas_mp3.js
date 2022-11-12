@@ -1,4 +1,4 @@
-import util from 'util'
+/*import util from 'util'
 import path from 'path' 
  let handler = async (m, { conn }) => {
     if (!db.data.chats[m.chat].audios && m.isGroup) throw 0
@@ -16,3 +16,4 @@ import path from 'path'
     handler.customPrefix = /No Rompas Mas|no rompas mas/i
     handler.command = new RegExp
     export default handler
+*/
