@@ -1,4 +1,4 @@
-import util from 'util'
+/*import util from 'util'
 import path from 'path'
 
 let handler = async (m, { conn }) => {
@@ -12,4 +12,4 @@ ptt: true
 handler.customPrefix = /puerco|Puerco|marrano|asi te queria hagarrar/
 handler.command = new RegExp
 export default handler
-
+*/
