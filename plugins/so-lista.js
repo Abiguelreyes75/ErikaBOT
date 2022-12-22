@@ -12,6 +12,12 @@ let vn = './media/elmamut.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}  
     
+if (/^abduzcan$/i.test(m.text) && chat.audios) {
+if (!db.data.chats[m.chat].audios && m.isGroup) throw 0
+let vn = './media/abduzcan.mp3'
+this.sendPresenceUpdate('recording', m.chat)
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt true})}
+     
 if (/^No Rompas Mas|no rompas mas$/i.test(m.text) && chat.audios) {  
 if (!db.data.chats[m.chat].audios && m.isGroup) throw 0    
 let vn = './media/elmamut.mp3'
