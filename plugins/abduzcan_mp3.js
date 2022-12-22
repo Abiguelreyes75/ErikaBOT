@@ -1,3 +1,5 @@
+/*
+
 import util from 'util'
 import path from 'path'
 
@@ -12,3 +14,5 @@ ptt: true
 handler.customPrefix = /abduzcan|Abduzcan|adbuzcan|Adbuzcan/ 
 handler.command = new RegExp
 export default handler
+
+*/
