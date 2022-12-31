@@ -56,12 +56,8 @@ _${title}_
 🎶 *Enviando canción...*
 ${wm}`
 
-await conn.sendButton(m.chat, '🎧 *Ｓ Ｐ Ｏ Ｔ Ｉ Ｆ Ｙ* 🎧', spotifyi, thumbnail, `${usedPrefix}menu`]], m, )
-let aa = await conn.sendMessage(m.chat, { audio: { url: json2.result.link }, fileName: `error.mp3`, mimetype: 'audio/mp4' }, { quoted: m })  
-if (!aa) return conn.sendFile(m.chat, json2.result.link, 'error.mp3', null, m, false, { mimetype: 'audio/mp4' }) 
-} catch (e) {
-await conn.sendButton(m.chat, '#report ' + usedPrefix + command, null, `${usedPrefix + command}*`]], m)
-console.log(`❗❗ ${usedPrefix + command} ❗❗`)
+await conn.sendButton(m.chat, `\n${wm}`, ['smsMalError3']() + '#report ' + usedPrefix + command, null, [['smsMensError1()', `#reporte ${['smsMensError2']()} *${usedPrefix + command}*`]], m)
+console.log(`❗❗ ${['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)
 }}
 handler.command = /^(spotify|music)$/i
