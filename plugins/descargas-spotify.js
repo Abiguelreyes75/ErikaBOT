@@ -33,32 +33,3 @@ handler.help = ['spotify']
 handler.tags = ['general']
 export default handler
 */
-
-import fetch from 'node-fetch'
-import fs from 'fs'
-
-let handler = async(m, { conn, text, usedPrefix, command }) => {
-let res = await (`https://api.lolhuman.xyz/api/spotifysearch?apikey=${lolkeysapi}&query=${text}`)
-let json = await res.json()
-let { link } = json.result[0]
-let res2 = await (`https://api.lolhuman.xyz/api/spotify?apikey=${lolkeysapi}&url=${link}`)
-let json2 = await res2.json()
-let { thumbnail, title, artists } = json2.result
-
-let spotifyi = `✨ *TITULO:* 
-_${title}_
-🗣️ *ARTISTA:* 
-» _${artists}_
-🌐 *URL*: 
-» _${link}_
-💚 *URL DE DESCARGA:* 
-» _${json2.result.link}_
-🎶 *Enviando canción...*
-${wm}`
-
-await conn.sendButton(m.chat, `\n${wm}`, ['smsMalError3']() + '#report ' + usedPrefix + command, null, [['smsMensError1()', `#reporte ${['smsMensError2']()} *${usedPrefix + command}*`]], m)
-console.log(`❗❗ ${['smsMensError2']()} ${usedPrefix + command} ❗❗`)
-console.log(e)
-}}
-handler.command = /^(spotify|music)$/i
-export default handler
