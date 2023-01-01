@@ -113,11 +113,22 @@ global.gatadiosig = ig
 global.md = 'LOS AMO USUARIOS '
 global.gatabot = md
 
-global.nn = 'https://chat.whatsapp.com/IekXJwjl6tr6MtI8IyUW3dW'
-global.nngrupo = nn
+global.nna = 'https://chat.whatsapp.com/HBiHQBwqXhZIvQ3i79Fjr4' //UPDATE GATABOT
+global.nna2 = 'HBiHQBwqXhZIvQ3i79Fjr4'
 
-global.nnn = 'https://chat.whatsapp.com/IekXJwjl6tr6MtI8IyUW3d'
-global.nnngrupo = nnn
+global.nn = 'https://chat.whatsapp.com/LtWKNYRPGFF5uUTLfg9qjl' //Grupo 1
+
+global.nnn = 'https://chat.whatsapp.com/DNscA7AE7KHEX0z2lnNAJx' //Grupo 2
+
+global.nnnt = 'https://chat.whatsapp.com/I8H1r5KnKk0GUzkgQLTwYE' //Grupo 3
+
+global.nnntt = 'https://chat.whatsapp.com/HQPCZSXiVvVCOhwYv7BVfL' //Grupo 4
+
+global.nnnttt = 'https://chat.whatsapp.com/CElZDsGX5xNCm4tPBt73El' //Grupo 5
+
+global.nnnttt2 = 'https://chat.whatsapp.com/Br6bNYzj1CB4vpa1YeeURG' //Grupo 6 COL
+
+global.nnnttt3 = 'https://chat.whatsapp.com/DeQm9J0tpbt5VH6kZkyL2D' //Grupo 7 COL
 
 global.paypal = 'TE AMO '
 global.donar = paypal
